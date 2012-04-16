@@ -1,4 +1,16 @@
 Wsu1::Application.routes.draw do
+  get "pages/index"
+
+  get "pages/basic"
+
+  get "pages/nav"
+
+  get "pages/tables"
+
+  get "pages/forms"
+
+  get "pages/alerts"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
