@@ -1,15 +1,10 @@
 Wsu1::Application.routes.draw do
-  get "pages/index"
-
-  get "pages/basic"
-
-  get "pages/nav"
-
-  get "pages/tables"
-
-  get "pages/forms"
-
-  get "pages/alerts"
+  
+  match '/basic'    => 'pages#basic'
+  match '/nav'      => 'pages#nav'
+  match '/tables'   => 'pages#tables'
+  match '/forms'    => 'pages#forms'
+  match '/alerts'   => 'pages#alerts'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -60,7 +55,7 @@ Wsu1::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'pages#index'
 
   # See how all your routes lay out with "rake routes"
 
