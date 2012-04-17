@@ -22,6 +22,8 @@ body {background:url('../assets/top_bg.jpg') 0 0 repeat-x #ffffff;}
 #sub-navigation li:last-child a {border-right:none;}
 #sub-navigation li.active a {color:#4814a0;}
 
+#footer {display:block;height:100px;width:100%;background-color:#4814a0;}
+
 
 
 
