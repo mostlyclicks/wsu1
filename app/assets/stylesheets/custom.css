@@ -1,6 +1,6 @@
 @import "bootstrap";
 
-body {background:url('../assets/top_bg.jpg') 0 0 repeat-x #ffffff;}
+body {background:url('../assets/top_bg.jpg') 0 0 repeat-x #4814a0;}
 
 #header {display:block;width:100%;height:175px;color:#ffffff;}
 #header img#logo {margin-left:-17px;margin-top:38px;}
@@ -22,9 +22,16 @@ body {background:url('../assets/top_bg.jpg') 0 0 repeat-x #ffffff;}
 #sub-navigation li:last-child a {border-right:none;}
 #sub-navigation li.active a {color:#4814a0;}
 
-#footer {display:block;height:100px;width:100%;background-color:#4814a0;}
+.content {display:block;width:100%;min-height:500px;background-color:#ffffff;margin-top:-7px;}
+
+
+.container {padding:30px 50px;}
 
 
 
+#footer {display:block;height:100px;width:960px;margin:0 auto 0 auto;color:#ffffff;}
+#footer .pull-left {width:650px;}
+#footer .pull-left h5 {margin-top:1em;}
+#footer .pull-left a {color:#ffffff;}
 
-.container {}
+
