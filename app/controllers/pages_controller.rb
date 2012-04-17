@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   
   
   def index
-    @header_title = 'Index'
+    @header_title = 'Index: Main Application Layout'
   end
 
   def basic

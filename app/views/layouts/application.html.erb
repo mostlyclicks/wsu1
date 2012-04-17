@@ -15,8 +15,25 @@
 <div class="container">
   <div id="header">
     <%= image_tag 'logo.png', id: 'logo', alt: 'Winona State University' %>
-    <h1 class="pull-right"><%= @header_title %></h1>
+    <div class="pull-right" id="welcome">
+    <h5>Welcome, Namehere | Logout</h5>
+    <h5><span>Technical Support: 507-555-5555</span></h5>
+    <h1><%= @header_title %></h1>
+    </div>
   </div>
+  
+  <div id="navigation">
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#">Application form</a></li>
+      <li><a href="#">WSU Home</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Additional Link</a></li>
+      <li><a href="#">Additional Link 2</a></li>
+    </ul>
+    
+  </div>
+  
+  
   <%= yield %>
 </div>
 </body>
