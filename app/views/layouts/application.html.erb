@@ -11,7 +11,6 @@
 </head>
 <body>
 
-  
 <div class="container">
   <div id="header">
     <%= image_tag 'logo.png', id: 'logo', alt: 'Winona State University' %>
@@ -30,11 +29,22 @@
       <li><a href="#">Additional Link</a></li>
       <li><a href="#">Additional Link 2</a></li>
     </ul>
-    
   </div>
   
+  <div id="sub-navigation">
+    <ul>
+      <li><a href="#">Subnav here</a></li>
+      <li class="active"><a href="#">Subnav here</a></li>
+      <li><a href="#">Subnav here</a></li>
+      <li><a href="#">Subnav here</a></li>
+      <li><a href="#">Subnav here</a></li>
+    </ul>
+  </div>
   
-  <%= yield %>
+  <div id="main_content">  
+    <%= yield %>
+  </div>
+
 </div>
 </body>
 </html>
