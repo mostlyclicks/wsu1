@@ -1,5 +1,8 @@
 @import "bootstrap";
 
-body {background:url('../assets/top_bg.jpg') 0 0 repeat-x #4814a0;}
+body {background:url('../assets/top_bg.jpg') 0 0 repeat-x #ffffff;}
 
 #header {display:block;width:100%;height:175px;}
+#header img#logo {margin-left:-17px;margin-top:38px;}
+#header h1 {color:#ffffff;}
+.container {}

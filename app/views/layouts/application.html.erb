@@ -10,12 +10,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+  
 <div class="container">
   <div id="header">
-    
-    <h2><%= @header_title %></h2>
+    <%= image_tag 'logo.png', id: 'logo', alt: 'Winona State University' %>
+    <h1 class="pull-right"><%= @header_title %></h1>
   </div>
-<%= yield %>
+  <%= yield %>
 </div>
 </body>
 </html>
