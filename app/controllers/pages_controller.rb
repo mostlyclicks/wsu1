@@ -6,6 +6,10 @@ class PagesController < ApplicationController
   def index
     @header_title = 'Index: Main Application Layout'
   end
+  
+  def no_tabs
+    @header_title = 'No Tab Nav Layout'
+  end
 
   def basic
     @header_title = 'Basic'
