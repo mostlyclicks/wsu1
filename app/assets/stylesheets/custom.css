@@ -1,6 +1,6 @@
 @import "bootstrap";
 
-body {background:url('../assets/top_bg.jpg') 0 0 repeat-x #4814a0;}
+body {background-color:#4814a0;}/*{background:url('../assets/top_bg.jpg') 0 0 repeat-x #4814a0;}*/
 
 #header {display:block;width:100%;height:175px;color:#ffffff;}
 #header img#logo {margin-left:-17px;margin-top:38px;}
@@ -15,17 +15,17 @@ body {background:url('../assets/top_bg.jpg') 0 0 repeat-x #4814a0;}
 #navigation .nav-tabs > li > a:hover {background-color:#00aef0;color:#ffffff;border-color:transparent;}
 #navigation .nav-tabs > .active > a, .nav-tabs > .active > a:hover {background-color:#00aef0;}
 
-#sub-navigation {display:block;}
-#sub-navigation ul {padding:0;margin:-1em 0 1em 24px;background-color:#00aef0;}
-#sub-navigation li { display:inline;padding:0;margin:0;}
-#sub-navigation li a { padding:2px 1em 3px 1em;margin-right:-4px;border-right:1px solid #ffffff;color:#ffffff;}
+#sub-navigation {display:block;width:100%;height:38px;background-color:#00aef0;margin-top:-19px;padding:0;}
+#sub-navigation ul {display:block;padding:0;margin:0 auto 1em 20px;line-height:30px;}
+#sub-navigation ul li { display:inline;padding:0;margin:0;}
+#sub-navigation ul li a { padding:2px 1em 3px 1em;margin-right:-4px;border-right:1px solid #ffffff;color:#ffffff;}
 #sub-navigation li:last-child a {border-right:none;}
 #sub-navigation li.active a {color:#4814a0;}
 
 .content {display:block;width:100%;min-height:500px;background-color:#ffffff;margin-top:-7px;}
 
 
-.container {padding:30px 50px;}
+/*.container {padding:30px 50px;}*/
 
 
 
