@@ -23,9 +23,9 @@ body {background-color:#4814a0;}/*{background:url('../assets/top_bg.jpg') 0 0 re
 #sub-navigation li.active a {color:#4814a0;}
 
 .content {display:block;width:100%;min-height:500px;background-color:#ffffff;margin-top:-0px;}
+.content .container {padding:30px 50px;}
 
 
-/*.container {padding:30px 50px;}*/
 
 
 
