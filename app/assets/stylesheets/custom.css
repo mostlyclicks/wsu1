@@ -2,7 +2,7 @@
 
 body {background-color:#4814a0;font-family:Arial, Helvetica, Arial, sans-serif;}/*{background:url('../assets/top_bg.jpg') 0 0 repeat-x #4814a0;}*/
 body, p, label {color:#676767;font-family:Arial, Helvetica, Arial, sans-serif;}
-hr {border: 2px solid #f26432;}
+hr {border: 2px solid #f26432;margin:15px 0 15px 0;}
 caption {text-align:left;}
 
 #header {display:block;width:100%;height:175px;color:#ffffff;}
@@ -41,9 +41,7 @@ caption {text-align:left;}
 
 .btn {font-size:12px;}
 .btn-small {padding: 3px 25px;}
-input, button, select, textarea {
-font-family: Arial, Helvetica, Arial, sans-serif;
-}
+input, button, select, textarea {font-family: Arial, Helvetica, Arial, sans-serif;}
 
 .radio {margin-top:4px;}
 .checkbox {margin-top:4px;}
@@ -55,6 +53,10 @@ label span {color:#f26432;}
 .required span {color:#f26432;}
 
 .icon-info-sign, .icon-pencil {background-image: url("../assets/glyphicons-halflings-tr-gr.png");}
+.next-arrow {display:block;width:15px;height:16px;float:right;margin:8px 0 0 8px;background:url("../assets/right-arrow.png") 0 0;}
+.prev-arrow {display:block;width:15px;height:16px;float:left;margin:8px 8px 0 0px;background:url("../assets/left-arrow.png") 0 0;}
+
+.pagination {text-align:center;}
 
 
 
