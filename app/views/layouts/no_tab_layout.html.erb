@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Winona State University</title>
+  <title>Winona State University - No Tabs</title>
   <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
     <![endif]-->
@@ -19,34 +19,11 @@
       <h1><%= @header_title %></h1>
       </div>
     </div>
-  
-    <div id="navigation">
-      <ul class="nav nav-tabs">
-        <li class="active"><a href="#">Index</a></li>
-        <li><a href="/basic">Basic</a></li>
-        <li><a href="/forms">Forms</a></li>
-        <li><a href="/alerts">Alerts</a></li>
-        <li><a href="tables">Tables</a></li>
-        <li><a href="/no_tab">No Tabs</a></li>
-      </ul>
-    </div>
-  </div><!-- header container -->
-  
-  <div id="sub-navigation">
-    <div class="container">
-      <ul>
-        <li><a href="#">Subnav here</a></li>
-        <li class="active"><a href="#">Subnav here</a></li>
-        <li><a href="#">Subnav here</a></li>
-        <li><a href="#">Subnav here</a></li>
-        <li><a href="#">Subnav here</a></li>
-      </ul>
-    </div>
-  </div><!-- sub-navigation -->
+</div><!-- header container -->
   
   
   <div class="content">
-    <div class="container">
+    <div class="container fl-cont-padding">
         <%= yield %>
     </div>
   </div><!-- content -->

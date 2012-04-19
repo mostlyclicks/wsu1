@@ -7,8 +7,9 @@ class PagesController < ApplicationController
     @header_title = 'Index: Main Application Layout'
   end
   
-  def no_tabs
+  def no_tab
     @header_title = 'No Tab Nav Layout'
+    render :layout => 'no_tab_layout'
   end
 
   def basic
@@ -21,6 +22,7 @@ class PagesController < ApplicationController
 
   def tables
     @header_title = 'Tables'
+    render :layout => 'float_container'
   end
 
   def forms

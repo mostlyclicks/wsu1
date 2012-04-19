@@ -4,6 +4,7 @@ body {background-color:#4814a0;font-family:Arial, Helvetica, Arial, sans-serif;}
 body, p, label {color:#676767;font-family:Arial, Helvetica, Arial, sans-serif;}
 hr {border: 2px solid #f26432;margin:15px 0 15px 0;}
 caption {text-align:left;}
+.fl-cont-padding {padding:40px;}
 
 #header {display:block;width:100%;height:175px;color:#ffffff;}
 #header img#logo {margin-left:-17px;margin-top:38px;}

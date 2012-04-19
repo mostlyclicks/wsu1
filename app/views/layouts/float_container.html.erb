@@ -10,6 +10,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
   <div class="container">
     <div id="header">
       <%= image_tag 'logo.png', id: 'logo', alt: 'Winona State University' %>
@@ -46,7 +47,7 @@
   
   
   <div class="content">
-    <div class="container">
+    <div class="container-float fl-cont-padding">
         <%= yield %>
     </div>
   </div><!-- content -->

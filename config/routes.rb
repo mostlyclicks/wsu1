@@ -5,6 +5,7 @@ Wsu1::Application.routes.draw do
   match '/tables'   => 'pages#tables'
   match '/forms'    => 'pages#forms'
   match '/alerts'   => 'pages#alerts'
+  match '/no_tab'   => 'pages#no_tab'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
