@@ -30,6 +30,15 @@ caption {text-align:left;}
 
 /* Forms, labels, prompts */
 .form-inline, .form-block {margin:28px 0 28px 0;}
+.form-block-center {width:550px;margin:0 auto;}
+.form-horizontal .control-group {
+  margin-bottom: 10px;
+  *zoom: 1;
+}
+/*
+.controls {margin:8px 0 8px 0;border:1px solid red;}
+.control-label {margin:8px 0 4px 0;border:1px solid red;}*/
+
 .btn {font-size:12px;}
 .btn-small {padding: 3px 25px;}
 input, button, select, textarea {
