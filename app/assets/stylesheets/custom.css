@@ -35,6 +35,9 @@ caption {text-align:left;}
 input, button, select, textarea {
 font-family: Arial, Helvetica, Arial, sans-serif;
 }
+
+.radio {margin-top:4px;}
+.checkbox {margin-top:4px;}
 .left-15 {margin-left:15px;}
 .right-15 {margin-right:15px;}
 
