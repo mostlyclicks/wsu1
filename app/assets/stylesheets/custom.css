@@ -2,7 +2,8 @@
 
 body {background-color:#4814a0;font-family:Arial, Helvetica, Arial, sans-serif;}/*{background:url('../assets/top_bg.jpg') 0 0 repeat-x #4814a0;}*/
 body, p, label {color:#676767;font-family:Arial, Helvetica, Arial, sans-serif;}
-hr {border:#f26432;}
+hr {border: 2px solid #f26432;}
+caption {text-align:left;}
 
 #header {display:block;width:100%;height:175px;color:#ffffff;}
 #header img#logo {margin-left:-17px;margin-top:38px;}
@@ -28,23 +29,27 @@ hr {border:#f26432;}
 .content .container {padding:30px 50px;width:880px;}
 
 /* Forms, labels, prompts */
-.form-inline {margin:28px 0 28px 0;}
+.form-inline, .form-block {margin:28px 0 28px 0;}
 .btn {font-size:12px;}
 .btn-small {padding: 3px 25px;}
 input, button, select, textarea {
 font-family: Arial, Helvetica, Arial, sans-serif;
 }
 .left-15 {margin-left:15px;}
-.right-15 {margin-left:15px;}
+.right-15 {margin-right:15px;}
 
+label span {color:#f26432;}
 .required {font-style:italic;}
 .required span {color:#f26432;}
+
+.icon-info-sign, .icon-pencil {background-image: url("../assets/glyphicons-halflings-tr-gr.png");}
 
 
 
 #footer {display:block;height:100px;width:960px;margin:0 auto 0 auto;color:#ffffff;}
 #footer .pull-left {width:650px;}
 #footer .pull-left h5 {margin-top:1em;}
+#footer p {color:#ffffff;}
 #footer .pull-left a {color:#ffffff;}
 
 
