@@ -79,3 +79,24 @@
 
 <hr />
 
+<h3>Tooltips</h3>
+<p>This is an example of <a href="#" id= "example" rel="tooltip" title="Check this out">tooltips</a>.</p>
+
+<script>
+  (function(){
+    $('#example').tooltip('hide')
+    
+  })();
+</script>
+
+<hr />
+
+<h3>Popovers</h3>
+<a href="#" id="popoverex" class="btn" rel="popover" data-content="This is an example of a popover" data-original-title="A Popover">Hover over this button</a>
+
+<script>
+  (function() {
+    $('#popoverex').popover('hide');
+  })();
+</script>
+
