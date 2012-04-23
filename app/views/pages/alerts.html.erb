@@ -2,3 +2,80 @@
 <h1>Pages#alerts</h1>
 <p>Find me in app/views/pages/alerts.html.erb</p>
 
+<hr />
+
+<h3>Warning Alert</h3>
+<div class="show-hide-links">
+  <a href="#" id="show-alert">Show Alert</a> | 
+  <a href="#" id="hide-alert">Hide Alert</a>
+</div>
+<div class="alert">
+  <a class="close" data-dismiss="alert">×</a>
+  <strong>Warning!</strong> This is an alert block. Clicking the 'X' deletes this div. Clicking 'Show Alert' and 'Hide Alert' changes the display attribute of the div.
+</div>
+
+<h3>Error or Danger Alert</h3>
+<div class="show-hide-links">
+  <a href="#" id="show-alert-error">Show Alert</a> | 
+  <a href="#" id="hide-alert-error">Hide Alert</a>
+</div>
+<div class="alert alert-error">
+  <a class="close" data-dismiss="alert">×</a>
+  <strong>Error or Danger!</strong> This is an alert block. Clicking the 'X' deletes this div. Clicking 'Show Alert' and 'Hide Alert' changes the display attribute of the div.
+</div>
+
+<h3>Success</h3>
+<div class="show-hide-links">
+  <a href="#" id="show-alert-success">Show Alert</a> | 
+  <a href="#" id="hide-alert-success">Hide Alert</a>
+</div>
+<div class="alert alert-success">
+  <a class="close" data-dismiss="alert">×</a>
+  <strong>Success</strong> This is a success message block. Clicking the 'X' deletes this div. Clicking 'Show Alert' and 'Hide Alert' changes the display attribute of the div.
+</div>
+
+
+
+
+
+<script>
+  (function() {
+    $('#hide-alert').click(function() {
+      console.log('hide alert');
+      $('div.alert').css('display', 'none');
+    });
+    $('#show-alert').click(function() {
+      console.log('show alert');
+      $('div.alert').css('display', 'block');
+    });
+    
+    $('#hide-alert-error').click(function() {
+      console.log('hide alert');
+      $('div.alert.alert-error').css('display', 'none');
+    });
+     $('#show-alert-error').click(function() {
+        console.log('show alert');
+        $('div.alert.alert-error').css('display', 'block');
+      });
+      
+     $('#hide-alert-success').click(function() {
+        console.log('hide alert');
+        $('div.alert.alert-success').css('display', 'none');
+      });
+     $('#show-alert-success').click(function() {
+        console.log('show alert');
+        $('div.alert.alert-success').css('display', 'block');
+      });
+    
+    
+    
+    
+    $('.close').click(function() {
+      $('.show-hide-links').replaceWith('<a href="/alerts">Reload page to see alert</a>')
+    })
+  
+  })();
+</script>
+
+<hr />
+
