@@ -146,6 +146,86 @@
   
   <hr />
   
+  <h3>Form Error State</h3>
+  
+  <p>Your diploma will be mailed to this address 8-10 weeks after commencement.</p>
+  
+
+ 
+  <div class="alert alert-error">
+    <a class="close" data-dismiss="alert">×</a>
+    <h4 class="alert-heading">Whoops!</h4>
+     You must complete the following information: Address 1, City, State, Zip, Country, Local phone
+  </div>
+  
+  <div class="form-block-center">
+  <form class="form-horizontal">
+    <fieldset>
+        
+        <div class="control-group error">
+          <label class="control-label" for="input01">Address line 1:<span>*</span></label>
+          <div class="controls">
+            <input type="text" class="input-xlarge" id="input01" placeholder="Street address, PO Box, c/o">
+          </div>
+        </div>
+        
+        <div class="control-group">
+          <label class="control-label" for="input01">Address line 2: </label>
+          <div class="controls">
+            <input type="text" class="input-xlarge" id="input01" placeholder="Apt. #, suite, unit, floor, etc.">
+          </div>
+        </div>
+        
+        <div class="control-group error">
+          <label class="control-label" for="input01">City:<span>*</span></label>
+          <div class="controls">
+            <input type="text" class="input-xlarge" id="input01" placeholder="City">
+          </div>
+        </div>
+        
+        <div class="control-group error">
+          <label class="control-label" for="input01">State:<span>*</span></label>
+          <div class="controls">
+            <select>
+              <option selected="selected">State</option>
+              <option>WI</option>
+              <option>MN</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="control-group error">
+          <label class="control-label" for="input01">Zip:<span>*</span></label>
+          <div class="controls">
+            <input type="text" class="input-xlarge" id="input01" placeholder="Zip">
+          </div>
+        </div>
+        
+        <div class="control-group error">
+          <label class="control-label" for="input01">Country:<span>*</span></label>
+          <div class="controls">
+            <select>
+              <option selected="selected">Country</option>
+              <option>USA</option>
+              <option>UK</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="control-group error">
+          <label class="control-label" for="input01">Local phone:<span>*</span></label>
+          <div class="controls">
+            <input type="text" class="input-xlarge" id="input01" placeholder="Phone">
+          </div>
+        </div>
+        
+      
+    </fieldset>
+  </form>
+  </div>
+  
+  <hr />
+  
   <div class="form-horizontal">
   
     <div class="form-inline">

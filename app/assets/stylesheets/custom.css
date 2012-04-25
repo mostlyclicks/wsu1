@@ -1,5 +1,22 @@
 @import "bootstrap";
 
+/* Colors */
+.purple                 {color:#4814a0;}
+.purple-background      {background-color:#4814a0;}
+.orange                 {color:#f26432;}
+.orange-background      {background-color:#f26432;}
+.blue                   {color:#00aef0;}
+.blue-background        {background-color:#00aef0;}
+.light-blue             {color:#e5f7fd;}
+.light-blue-background  {background-color:#e5f7fd;}
+.yellow                 {color:#fef7a6;}
+.yellow-background      {background-color:#fef7a6}
+.white                  {color:#ffffff;}
+
+.padding10 {padding:10px;}
+.padding20 {padding:20px;}
+
+
 body {background:url('../assets/top_bg.jpg') 0 0 repeat-x #4814a0;font-family:Arial, Helvetica, Arial, sans-serif;}/*{background:url('../assets/top_bg.jpg') 0 0 repeat-x #4814a0;}*/
 body, p, label {color:#676767;font-family:Arial, Helvetica, Arial, sans-serif;}
 hr {border: 2px solid #f26432;margin:15px 0 15px 0;}
@@ -32,13 +49,10 @@ caption {text-align:left;}
 /* Forms, labels, prompts */
 .form-inline, .form-block {margin:28px 0 28px 0;}
 .form-block-center {width:550px;margin:0 auto;}
-.form-horizontal .control-group {
+.form-horizontal .control-group, .form-horizontal .control-group-error  {
   margin-bottom: 10px;
   *zoom: 1;
 }
-/*
-.controls {margin:8px 0 8px 0;border:1px solid red;}
-.control-label {margin:8px 0 4px 0;border:1px solid red;}*/
 
 .btn {font-size:12px;}
 .btn-small {padding: 3px 25px;}

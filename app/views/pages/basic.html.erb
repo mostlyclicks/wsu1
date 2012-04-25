@@ -1,5 +1,30 @@
 <% provide(:header_title, 'Basic')%>
 
+<ul class="breadcrumb">
+  <li>
+    <a href="#">Home</a> <span class="divider">/</span>
+  </li>
+  <li>
+    <a href="#">Library</a> <span class="divider">/</span>
+  </li>
+  <li class="active">Data</li>
+</ul>
+
+<hr />
+
+<h2>Colors</h2>
+<div class="show-grid">
+  <div class="row">
+    <div class="span2 purple-background padding10 white">Purple<br />#4814a0</div>
+    <div class="span2 orange-background padding10 white">Orange<br />#f26432</div>
+    <div class="span2 blue-background padding10 white">Blue<br />#00aef0</div>
+    <div class="span2 light-blue-background padding10">Light Blue<br />#e5f7fd</div>
+    <div class="span2 yellow-background padding10">Yellow<br />#fef7a6</div>
+  </div>
+</div>
+  
+<hr />
+
 <h1>Header 1</h1>
 <h2>Header 2</h2>
 <h3>Header 3</h3>
@@ -110,6 +135,13 @@
         <td>shawna_wunsch@schmeler.name</td>
         <td>Nader Inc</td>
         <td>Eddie Beatty</td>
-      
       </tr>
-      </table>
+    </table>
+
+<hr />
+
+<h2>Search</h2>
+<form class="well form-search">
+  <input type="text" class="input-medium search-query">
+  <button type="submit" class="btn">Search</button>
+</form>
