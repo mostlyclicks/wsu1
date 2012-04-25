@@ -32,4 +32,8 @@ class PagesController < ApplicationController
   def alerts
     @header_title = 'Alerts'
   end
+  
+  def grid_layouts
+    @header_title = 'Layouts'
+  end
 end
