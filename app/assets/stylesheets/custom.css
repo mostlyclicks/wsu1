@@ -67,6 +67,11 @@ label span {color:#f26432;}
 border-color: #d6e9c6;
 color: #468847;}
 
+/*Tables 
+.table-striped tbody tr:nth-child(odd) th {background-color:#fef7a6;}*/
+.table-striped tbody tr:nth-child(even) td {background-color:#e5f7fd;}
+thead, tbody th {background-color:#fef7a6;}
+
 
 
 #footer {display:block;height:100px;width:960px;margin:0 auto 0 auto;color:#ffffff;}
