@@ -15,6 +15,8 @@
 
 .padding10 {padding:10px;}
 .padding20 {padding:20px;}
+/*.padding10-30 {padding:10px 30px;}*/
+.center {text-align:center;}
 
 
 body {background:url('../assets/top_bg.jpg') 0 0 repeat-x #4814a0;font-family:Arial, Helvetica, Arial, sans-serif;}/*{background:url('../assets/top_bg.jpg') 0 0 repeat-x #4814a0;}*/
@@ -44,15 +46,13 @@ caption {text-align:left;}
 #sub-navigation li.active a {color:#4814a0;}
 
 .content {display:block;width:100%;min-height:500px;background-color:#ffffff;margin-top:-0px;}
-.content .container {padding:30px 50px;width:880px;}
+/*.content .container {padding:30px 50px;width:880px;}*/
+.content .container {padding:30px 50px;width:940px;}
 
 /* Forms, labels, prompts */
 .form-inline, .form-block {margin:28px 0 28px 0;}
 .form-block-center {width:550px;margin:0 auto;}
-.form-horizontal .control-group, .form-horizontal .control-group-error  {
-  margin-bottom: 10px;
-  *zoom: 1;
-}
+.form-horizontal .control-group, .form-horizontal .control-group-error  {margin-bottom: 10px;*zoom: 1;}
 
 .btn {font-size:12px;}
 .btn-small {padding: 3px 25px;}
@@ -72,7 +72,6 @@ label span {color:#f26432;}
 .prev-arrow {display:block;width:15px;height:16px;float:left;margin:8px 8px 0 0px;background:url("../assets/left-arrow.png") 0 0;}
 
 .pagination {text-align:center;}
-
 
 /*Alerts */
 .alert {background-color:#fef7a6;color:#f78f1e;}
