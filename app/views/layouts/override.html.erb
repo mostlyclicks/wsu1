@@ -10,6 +10,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div id="override">
+    <div class="container" >
+      <div class="control-group">
+      <form class="form-inline" style="margin-top:10px;">
+        <label class="right-15">Override as:<span>*</span></label>
+        <input type="text" />
+        <i class="icon-info-sign left-15"></i>
+        <input type="submit" value="Update" class="btn btn-small left-15"> 
+      </form>
+      </div>
+    </div>
+  </div>
   <div class="container">
     <div id="header">
       <%= image_tag 'logo.png', id: 'logo', alt: 'Winona State University' %>

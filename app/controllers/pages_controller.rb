@@ -36,4 +36,9 @@ class PagesController < ApplicationController
   def grid_layouts
     @header_title = 'Layouts'
   end
+  
+  def override
+    @header_title = 'Override'
+    render :layout => 'override'
+  end
 end
