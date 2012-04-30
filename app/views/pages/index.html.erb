@@ -1,4 +1,311 @@
-<h1><%= @header_title %></h1>
+<h2><%= @header_title %></h2>
+<p>An example of form elements.</p>
+<form class="form-inline">
+  <input type="submit" value="Withdraw" class="btn btn-small">
+  <label class="left-15">Withdraw this application for graduation <i class="icon-info-sign"></i></label> 
+  <p class="pull-right required"><span>*</span> required fields</p>
+</form>
+
+
+
+<hr />
+
+<h4>Lastname, Firstname (#########)</h4>
+<form class="form-inline">
+  <fieldset>
+    <p>
+    <label class="right-15">Graduation term:<span>*</span></label>
+    
+    <select>
+      <option selected="selected">Select Something</option>
+      <option>Hello</option>
+      <option>Goodbye</option>
+      <option>Greeting</option>
+    </select>
+    </p>
+    <p>
+    <label class="right-15">Name as it will appear on your diploma:<span>*</span></label>
+    <input type="text" />
+  </p>
+  </fieldset>
+  
+  <p>
+    <table class="table table-striped table-bordered table-condensed">
+      <caption>Select the major(s) you plan to graduate with this term: <i class="icon-info-sign"></i></caption>
+      <thead>
+      <tr>
+        <th width="20">Select</th>
+        <th width="100">Primary <i class="icon-info-sign"></i></th>
+        <th>Major</th>
+        <th>Degree</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><input type="checkbox" /></td>
+        <td><input type="radio" /></td>
+        <td>2+2 K-6 w/ML Comm Art &amp; Lit</td>
+        <td>BT</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" /></td>
+        <td><input type="radio" /></td>
+        <td>2+2 K-6 w/ML Comm Art &amp; Lit</td>
+        <td>BT</td>
+      </tr>
+      </tbody>
+    </table>
+  </p>
+  
+  <p>
+    <table class="table table-striped table-bordered table-condensed">
+      <caption>Select the minor(s) you plan to graduate with this term:</caption>
+      <thead>
+        <tr>
+          <th>Select</th>
+          <th>Minor</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><input type="checkbox" /></td>
+        <td>Philosophy</td> 
+      </tr>
+    </tbody>
+    </table>
+  </p>
+  </form>
+  <hr />
+  
+ 
+  <p>Your diploma will be mailed to this address 8-10 weeks after commencement.</p>
+  
+  <div class="form-block-center">
+  <form class="form-horizontal">
+    <fieldset>
+        
+        <div class="control-group">
+          <label class="control-label" for="input01">Address line 1:<span>*</span></label>
+          <div class="controls">
+            <input type="text" class="input-xlarge" id="input01" placeholder="Street address, PO Box, c/o">
+          </div>
+        </div>
+        
+        <div class="control-group">
+          <label class="control-label" for="input01">Address line 2:<span>*</span></label>
+          <div class="controls">
+            <input type="text" class="input-xlarge" id="input01" placeholder="Apt. #, suite, unit, floor, etc.">
+          </div>
+        </div>
+        
+        <div class="control-group">
+          <label class="control-label" for="input01">City:<span>*</span></label>
+          <div class="controls">
+            <input type="text" class="input-xlarge" id="input01" placeholder="City">
+          </div>
+        </div>
+        
+        <div class="control-group">
+          <label class="control-label" for="input01">State:<span>*</span></label>
+          <div class="controls">
+            <select>
+              <option selected="selected">State</option>
+              <option>WI</option>
+              <option>MN</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="input01">Zip:<span>*</span></label>
+          <div class="controls">
+            <input type="text" class="input-xlarge" id="input01" placeholder="Zip">
+          </div>
+        </div>
+        
+        <div class="control-group">
+          <label class="control-label" for="input01">Country:<span>*</span></label>
+          <div class="controls">
+            <select>
+              <option selected="selected">Country</option>
+              <option>USA</option>
+              <option>UK</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="control-group">
+          <label class="control-label" for="input01">Local phone:<span>*</span></label>
+          <div class="controls">
+            <input type="text" class="input-xlarge" id="input01" placeholder="Phone">
+          </div>
+        </div>
+        
+      
+    </fieldset>
+  </form>
+  </div>
+  
+  <hr />
+  
+  <h3>Form Error State</h3>
+  
+  <p>Your diploma will be mailed to this address 8-10 weeks after commencement.</p>
+  
+
+ 
+  <div class="alert alert-error">
+    <a class="close" data-dismiss="alert">×</a>
+    <h4 class="alert-heading">Whoops!</h4>
+     You must complete the following information: Address 1, City, State, Zip, Country, Local phone
+  </div>
+  
+  <div class="form-block-center">
+  <form class="form-horizontal">
+    <fieldset>
+        
+        <div class="control-group error">
+          <label class="control-label" for="input01">Address line 1:<span>*</span></label>
+          <div class="controls">
+            <input type="text" class="input-xlarge" id="input01" placeholder="Street address, PO Box, c/o">
+          </div>
+        </div>
+        
+        <div class="control-group">
+          <label class="control-label" for="input01">Address line 2: </label>
+          <div class="controls">
+            <input type="text" class="input-xlarge" id="input01" placeholder="Apt. #, suite, unit, floor, etc.">
+          </div>
+        </div>
+        
+        <div class="control-group error">
+          <label class="control-label" for="input01">City:<span>*</span></label>
+          <div class="controls">
+            <input type="text" class="input-xlarge" id="input01" placeholder="City">
+          </div>
+        </div>
+        
+        <div class="control-group error">
+          <label class="control-label" for="input01">State:<span>*</span></label>
+          <div class="controls">
+            <select>
+              <option selected="selected">State</option>
+              <option>WI</option>
+              <option>MN</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="control-group error">
+          <label class="control-label" for="input01">Zip:<span>*</span></label>
+          <div class="controls">
+            <input type="text" class="input-xlarge" id="input01" placeholder="Zip">
+          </div>
+        </div>
+        
+        <div class="control-group error">
+          <label class="control-label" for="input01">Country:<span>*</span></label>
+          <div class="controls">
+            <select>
+              <option selected="selected">Country</option>
+              <option>USA</option>
+              <option>UK</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="control-group error">
+          <label class="control-label" for="input01">Local phone:<span>*</span></label>
+          <div class="controls">
+            <input type="text" class="input-xlarge" id="input01" placeholder="Phone">
+          </div>
+        </div>
+        
+      
+    </fieldset>
+  </form>
+  </div>
+  
+  <hr />
+  
+  <div class="form-horizontal">
+  
+    <div class="form-inline">
+      <div class="control-group">
+        <label class="right-15 radio">Do you plan to participate in commencement?<span>*</span></label>
+        <input type="radio" name="participate" value="Yes" /> <label class="radio right-15">Yes, spring term 2012 <i class="icon-info-sign"></i></label>
+        <input type="radio" name="participate" value="No" /> <label class="radio">No, not walking</label>
+      </div>
+      
+      <p><small><em>The commencement program will go to print on Friday, April 13, 2012. Students applying after that date will note have their name printed in the commencement program.</em></small></p>
+      <div class="control-group">
+        <input type="checkbox" name="include" value="Yes" /> <label class="checkbox">Include me in commencement program.</label>
+      </div>
+    </div>
+    
+    <p>Name and hometown as it will appear in the commencement program:</p>
+    
+    <div class="form-block-center">
+    <div class="control-group">
+      <label class="control-label" for="input01">Hometown:<span>*</span></label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="input01" placeholder="Your hometown">
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <label class="control-label" for="input01">Country:<span>*</span></label>
+      <div class="controls">
+        <select>
+          <option selected="selected">Country</option>
+          <option>USA</option>
+          <option>UK</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <label class="control-label" for="input01">State:<span>*</span></label>
+      <div class="controls">
+        <select>
+          <option selected="selected">State</option>
+          <option>WI</option>
+          <option>MN</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="control-group">
+      <label class="control-label" for="input01"><i class="icon-info-sign"></i> <em>Preview:</em></label>
+      <div class="controls">
+        <p>Firstname M. Lastname<br />
+          Hometown AA</p>
+      </div>
+    </div>
+</div>
+  
+  </div>
+  
+  <hr />
+  
+  <div class="pagination" style="">
+    <ul>
+      <li><a href="#"><i class="prev-arrow"></i>Prev</a></li>
+      <li class="active">
+        <a href="#">1</a>
+      </li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">Next<i class="next-arrow"></i></a></li>
+    </ul>
+  </div>
+  
+  <input type="submit" value="Submit" class="btn btn-small pull-right">
+  
+  
+  
+
 
 
 

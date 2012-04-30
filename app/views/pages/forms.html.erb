@@ -1,305 +1,299 @@
 <h2><%= @header_title %></h2>
-<p>An example of form elements.</p>
+<p>An example of form elements and their corresponding markup.</p>
+<hr />
+
+<h3>Inline Form</h3>
 <form class="form-inline">
   <input type="submit" value="Withdraw" class="btn btn-small">
-  <label class="left-15">Withdraw this application for graduation <i class="icon-info-sign"></i></label> 
+  <label class="left-15">Label text for button. Icon sign is provided to the right. <i class="icon-info-sign"></i></label> 
   <p class="pull-right required"><span>*</span> required fields</p>
 </form>
 
+
+
+<pre class="prettyprint linenums code">
+      &lt;input type="submit" value="Withdraw" class="btn btn-small" /&gt;
+      &lt;label class="left-15"&gt;Label text for button. Icon sign is provided to the right. &lt;i class="icon-info-sign"&gt;&lt;/i&gt;&lt;/label&gt;
+      &lt;p class="pull-right required"&gt;&lt;span&gt;*&lt;/span&gt; required fields&lt;/p&gt;
+</pre>
+
+
+<div class="form-inline">
+  <div class="control-group">
+    <label class="right-15 radio">Do you plan to participate in commencement?<span>*</span></label>
+    <input type="radio" name="participate" value="Yes" /> <label class="radio right-15">Yes, spring term 2012 <i class="icon-info-sign"></i></label>
+    <input type="radio" name="participate" value="No" /> <label class="radio">No, not walking</label>
+  </div>
+</div>
+
+<pre class="prettyprint linenums code">
+  
+  &lt;div class="form-inline"&gt;
+    &lt;div class="control-group"&gt;
+      &lt;label class="right-15 radio"&gt;Do you plan to participate in commencement?&lt;span&gt;*&lt;/span&gt;&lt;/label&gt;
+      &lt;input type="radio" name="participate" value="Yes" /&gt; &lt;label class="radio right-15"&gt;Yes, spring term 2012 &lt;i class="icon-info-sign"&gt;&lt;/i&gt;&lt;/label&gt;
+      &lt;input type="radio" name="participate" value="No" /&gt; &lt;label class="radio"&gt;No, not walking&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</pre>
+
+
+
+
 <hr />
 
-<h4>Lastname, Firstname (#########)</h4>
-<form class="form-inline">
-  <fieldset>
-    <p>
-    <label class="right-15">Graduation term:<span>*</span></label>
-    
-    <select>
-      <option selected="selected">Select Something</option>
-      <option>Hello</option>
-      <option>Goodbye</option>
-      <option>Greeting</option>
-    </select>
-    </p>
-    <p>
-    <label class="right-15">Name as it will appear on your diploma:<span>*</span></label>
-    <input type="text" />
-  </p>
-  </fieldset>
-  
-  <p>
+<h3>Simple Form</h3>
+
+<p>Description text goes here</p>
+<div class="alert alert-error">
+  <a class="close" data-dismiss="alert">×</a>
+  <h4 class="alert-heading">Whoops!</h4>
+   You must complete the following information: Address 1, City, State, Zip, Country, Local phone
+</div>
+ 
+ <div class="form-block-center">
+ <form class="form-horizontal">
+   <fieldset>
+       
+       <div class="control-group">
+         <label class="control-label" for="input01">Text Label:<span>*</span></label>
+         <div class="controls">
+           <input type="text" class="input-xlarge" id="input01" placeholder="Text Field Input">
+         </div>
+       </div>
+       
+       <div class="control-group error">
+         <label class="control-label" for="input02">Text Label:<span>*</span></label>
+         <div class="controls">
+           <input type="text" class="input-xlarge" id="input01" placeholder="Error">
+         </div>
+       </div>
+       
+       <div class="control-group">
+         <label class="control-label" for="input01">Select:<span>*</span></label>
+         <div class="controls">
+           <select>
+             <option selected="selected">State</option>
+             <option>WI</option>
+             <option>MN</option>
+           </select>
+         </div>
+       </div>
+       
+       <div class="control-group">
+          <label class="control-label" for="checkboxes">Checkboxes:</label>
+          <div class="controls">
+            <label class="checkbox"><input type="checkbox">Checkbox 1</label>
+            <label class="checkbox"><input type="checkbox">Checkbox 2</label>
+            <label class="checkbox"><input type="checkbox">Checkbox 3</label>
+          </div>
+       </div>
+       
+       <div class="control-group">
+           <label class="control-label" for="radio">Radio Buttons:</label>
+           <div class="controls">
+             <label class="radio"><input type="radio" name="radioButtons" id="radio1"> Radio Button 1</label>
+             <label class="radio"><input type="radio" name="radioButtons" id="radio2"> Radio Button 2</label>
+             <label class="radio"><input type="radio" name="radioButtons" id="radio3"> Radio Button 3</label>
+           </div>
+        </div>
+        
+        <div class="control-group">
+          <label class="control-label" for="textarea">Text Area:</label>
+          <div class="controls">
+            <textarea class="input-xlarge" id="textarea" rows="5"></textarea>
+          </div>
+        </div>
+
+      
+       <div class="control-group">
+          <label class="control-label" for="input01"></label>
+          <div class="controls">
+            <hr />
+            <input type="submit" value="Submit" class="btn btn-small">
+          </div>
+        </div>
+   </fieldset>
+ </form>
+ </div>
+ 
+ <pre class="prettyprint linenums code">
+   &lt;h3&gt;Simple Form&lt;/h3&gt;
+
+   &lt;p&gt;Description text goes here&lt;/p&gt;
+   
+   &lt;div class="alert alert-error"&gt;
+     &lt;a class="close" data-dismiss="alert"&gt;×&lt;/a&gt;
+     &lt;h4 class="alert-heading"&gt;Whoops!&lt;/h4&gt;
+      You must complete the following information: Address 1, City, State, Zip, Country, Local phone
+   &lt;/div&gt;
+
+    &lt;div class="form-block-center"&gt;
+    &lt;form class="form-horizontal"&gt;
+      &lt;fieldset&gt;
+
+          &lt;div class="control-group"&gt;
+            &lt;label class="control-label" for="input01"&gt;Text Label:&lt;span&gt;*&lt;/span&gt;&lt;/label&gt;
+            &lt;div class="controls"&gt;
+              &lt;input type="text" class="input-xlarge" id="input01" placeholder="Text Field Input"&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class="control-group error"&gt;
+            &lt;label class="control-label" for="input02"&gt;Text Label:&lt;span&gt;*&lt;/span&gt;&lt;/label&gt;
+            &lt;div class="controls"&gt;
+              &lt;input type="text" class="input-xlarge" id="input01" placeholder="Error"&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class="control-group"&gt;
+            &lt;label class="control-label" for="input01"&gt;Select:&lt;span&gt;*&lt;/span&gt;&lt;/label&gt;
+            &lt;div class="controls"&gt;
+              &lt;select&gt;
+                &lt;option selected="selected"&gt;State&lt;/option&gt;
+                &lt;option&gt;WI&lt;/option&gt;
+                &lt;option&gt;MN&lt;/option&gt;
+              &lt;/select&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class="control-group"&gt;
+             &lt;label class="control-label" for="checkboxes"&gt;Checkboxes:&lt;/label&gt;
+             &lt;div class="controls"&gt;
+               &lt;label class="checkbox"&gt;&lt;input type="checkbox"&gt;Checkbox 1&lt;/label&gt;
+               &lt;label class="checkbox"&gt;&lt;input type="checkbox"&gt;Checkbox 2&lt;/label&gt;
+               &lt;label class="checkbox"&gt;&lt;input type="checkbox"&gt;Checkbox 3&lt;/label&gt;
+             &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class="control-group"&gt;
+              &lt;label class="control-label" for="radio"&gt;Radio Buttons:&lt;/label&gt;
+              &lt;div class="controls"&gt;
+                &lt;label class="radio"&gt;&lt;input type="radio" name="radioButtons" id="radio1"&gt; Radio Button 1&lt;/label&gt;
+                &lt;label class="radio"&gt;&lt;input type="radio" name="radioButtons" id="radio2"&gt; Radio Button 2&lt;/label&gt;
+                &lt;label class="radio"&gt;&lt;input type="radio" name="radioButtons" id="radio3"&gt; Radio Button 3&lt;/label&gt;
+              &lt;/div&gt;
+           &lt;/div&gt;
+           
+           &lt;div class="control-group"&gt;
+             &lt;label class="control-label" for="textarea"&gt;Text Area:&lt;/label&gt;
+             &lt;div class="controls"&gt;
+               &lt;textarea class="input-xlarge" id="textarea" rows="5"&gt;&lt;/textarea&gt;
+             &lt;/div&gt;
+           &lt;/div&gt;
+
+
+          &lt;div class="control-group"&gt;
+             &lt;label class="control-label" for="input01"&gt;&lt;/label&gt;
+             &lt;div class="controls"&gt;
+               &lt;hr /&gt;
+               &lt;input type="submit" value="Submit" class="btn btn-small"&gt;
+             &lt;/div&gt;
+           &lt;/div&gt;
+      &lt;/fieldset&gt;
+    &lt;/form&gt;
+    &lt;/div&gt;
+ </pre>
+
+<hr />
+
+<h3>Form in a table</h3>
+  <form class="form-horizontal">
+    <div class="control-group">
     <table class="table table-striped table-bordered table-condensed">
-      <caption>Select the major(s) you plan to graduate with this term: <i class="icon-info-sign"></i></caption>
+      <caption>Table with table header and alternating rows. Submit button uses "pull-right" class: <i class="icon-info-sign"></i></caption>
       <thead>
       <tr>
         <th width="20">Select</th>
-        <th width="100">Primary <i class="icon-info-sign"></i></th>
-        <th>Major</th>
-        <th>Degree</th>
+        <th width="150">Radio Column <i class="icon-info-sign"></i></th>
+        <th>Column Header</th>
+        <th>Column Header</th>
       </tr>
       </thead>
       <tbody>
       <tr>
         <td><input type="checkbox" /></td>
         <td><input type="radio" /></td>
-        <td>2+2 K-6 w/ML Comm Art &amp; Lit</td>
+        <td>Description text goes here.</td>
         <td>BT</td>
       </tr>
       <tr>
         <td><input type="checkbox" /></td>
         <td><input type="radio" /></td>
-        <td>2+2 K-6 w/ML Comm Art &amp; Lit</td>
+        <td>Description text goes here.</td>
+        <td>BT</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" /></td>
+        <td><input type="radio" /></td>
+        <td>Description text goes here.</td>
+        <td>BT</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" /></td>
+        <td><input type="radio" /></td>
+        <td>Description text goes here.</td>
         <td>BT</td>
       </tr>
       </tbody>
     </table>
-  </p>
-  
-  <p>
-    <table class="table table-striped table-bordered table-condensed">
-      <caption>Select the minor(s) you plan to graduate with this term:</caption>
-      <thead>
-        <tr>
-          <th>Select</th>
-          <th>Minor</th>
-        </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <td><input type="checkbox" /></td>
-        <td>Philosophy</td> 
-      </tr>
-    </tbody>
-    </table>
-  </p>
+    
+    <input type="submit" value="Submit" class="btn btn-small pull-right" />
+    </div>
   </form>
+  
+  <pre class="prettyprint code">
+    &lt;h3&gt;Form in a table&lt;/h3&gt;
+      &lt;form class="form-horizontal"&gt;
+        &lt;div class="control-group"&gt;
+        &lt;table class="table table-striped table-bordered table-condensed"&gt;
+          &lt;caption&gt;Table with table header and alternating rows. Submit button uses "pull-right" class: &lt;i class="icon-info-sign"&gt;&lt;/i&gt;&lt;/caption&gt;
+          &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th width="20"&gt;Select&lt;/th&gt;
+            &lt;th width="150"&gt;Radio Column &lt;i class="icon-info-sign"&gt;&lt;/i&gt;&lt;/th&gt;
+            &lt;th&gt;Column Header&lt;/th&gt;
+            &lt;th&gt;Column Header&lt;/th&gt;
+          &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;input type="checkbox" /&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;input type="radio" /&gt;&lt;/td&gt;
+            &lt;td&gt;Description text goes here.&lt;/td&gt;
+            &lt;td&gt;BT&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;input type="checkbox" /&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;input type="radio" /&gt;&lt;/td&gt;
+            &lt;td&gt;Description text goes here.&lt;/td&gt;
+            &lt;td&gt;BT&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;input type="checkbox" /&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;input type="radio" /&gt;&lt;/td&gt;
+            &lt;td&gt;Description text goes here.&lt;/td&gt;
+            &lt;td&gt;BT&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;input type="checkbox" /&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;input type="radio" /&gt;&lt;/td&gt;
+            &lt;td&gt;Description text goes here.&lt;/td&gt;
+            &lt;td&gt;BT&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+
+        &lt;input type="submit" value="Submit" class="btn btn-small pull-right" /&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;
+  </pre>
+  
+  
+  
   <hr />
   
  
-  <p>Your diploma will be mailed to this address 8-10 weeks after commencement.</p>
-  
-  <div class="form-block-center">
-  <form class="form-horizontal">
-    <fieldset>
-        
-        <div class="control-group">
-          <label class="control-label" for="input01">Address line 1:<span>*</span></label>
-          <div class="controls">
-            <input type="text" class="input-xlarge" id="input01" placeholder="Street address, PO Box, c/o">
-          </div>
-        </div>
-        
-        <div class="control-group">
-          <label class="control-label" for="input01">Address line 2:<span>*</span></label>
-          <div class="controls">
-            <input type="text" class="input-xlarge" id="input01" placeholder="Apt. #, suite, unit, floor, etc.">
-          </div>
-        </div>
-        
-        <div class="control-group">
-          <label class="control-label" for="input01">City:<span>*</span></label>
-          <div class="controls">
-            <input type="text" class="input-xlarge" id="input01" placeholder="City">
-          </div>
-        </div>
-        
-        <div class="control-group">
-          <label class="control-label" for="input01">State:<span>*</span></label>
-          <div class="controls">
-            <select>
-              <option selected="selected">State</option>
-              <option>WI</option>
-              <option>MN</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="control-group">
-          <label class="control-label" for="input01">Zip:<span>*</span></label>
-          <div class="controls">
-            <input type="text" class="input-xlarge" id="input01" placeholder="Zip">
-          </div>
-        </div>
-        
-        <div class="control-group">
-          <label class="control-label" for="input01">Country:<span>*</span></label>
-          <div class="controls">
-            <select>
-              <option selected="selected">Country</option>
-              <option>USA</option>
-              <option>UK</option>
-            </select>
-          </div>
-        </div>
-        
-        <div class="control-group">
-          <label class="control-label" for="input01">Local phone:<span>*</span></label>
-          <div class="controls">
-            <input type="text" class="input-xlarge" id="input01" placeholder="Phone">
-          </div>
-        </div>
-        
-      
-    </fieldset>
-  </form>
-  </div>
-  
-  <hr />
-  
-  <h3>Form Error State</h3>
-  
-  <p>Your diploma will be mailed to this address 8-10 weeks after commencement.</p>
-  
-
  
-  <div class="alert alert-error">
-    <a class="close" data-dismiss="alert">×</a>
-    <h4 class="alert-heading">Whoops!</h4>
-     You must complete the following information: Address 1, City, State, Zip, Country, Local phone
-  </div>
-  
-  <div class="form-block-center">
-  <form class="form-horizontal">
-    <fieldset>
-        
-        <div class="control-group error">
-          <label class="control-label" for="input01">Address line 1:<span>*</span></label>
-          <div class="controls">
-            <input type="text" class="input-xlarge" id="input01" placeholder="Street address, PO Box, c/o">
-          </div>
-        </div>
-        
-        <div class="control-group">
-          <label class="control-label" for="input01">Address line 2: </label>
-          <div class="controls">
-            <input type="text" class="input-xlarge" id="input01" placeholder="Apt. #, suite, unit, floor, etc.">
-          </div>
-        </div>
-        
-        <div class="control-group error">
-          <label class="control-label" for="input01">City:<span>*</span></label>
-          <div class="controls">
-            <input type="text" class="input-xlarge" id="input01" placeholder="City">
-          </div>
-        </div>
-        
-        <div class="control-group error">
-          <label class="control-label" for="input01">State:<span>*</span></label>
-          <div class="controls">
-            <select>
-              <option selected="selected">State</option>
-              <option>WI</option>
-              <option>MN</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="control-group error">
-          <label class="control-label" for="input01">Zip:<span>*</span></label>
-          <div class="controls">
-            <input type="text" class="input-xlarge" id="input01" placeholder="Zip">
-          </div>
-        </div>
-        
-        <div class="control-group error">
-          <label class="control-label" for="input01">Country:<span>*</span></label>
-          <div class="controls">
-            <select>
-              <option selected="selected">Country</option>
-              <option>USA</option>
-              <option>UK</option>
-            </select>
-          </div>
-        </div>
-        
-        <div class="control-group error">
-          <label class="control-label" for="input01">Local phone:<span>*</span></label>
-          <div class="controls">
-            <input type="text" class="input-xlarge" id="input01" placeholder="Phone">
-          </div>
-        </div>
-        
-      
-    </fieldset>
-  </form>
-  </div>
-  
-  <hr />
-  
-  <div class="form-horizontal">
-  
-    <div class="form-inline">
-      <div class="control-group">
-        <label class="right-15 radio">Do you plan to participate in commencement?<span>*</span></label>
-        <input type="radio" name="participate" value="Yes" /> <label class="radio right-15">Yes, spring term 2012 <i class="icon-info-sign"></i></label>
-        <input type="radio" name="participate" value="No" /> <label class="radio">No, not walking</label>
-      </div>
-      
-      <p><small><em>The commencement program will go to print on Friday, April 13, 2012. Students applying after that date will note have their name printed in the commencement program.</em></small></p>
-      <div class="control-group">
-        <input type="checkbox" name="include" value="Yes" /> <label class="checkbox">Include me in commencement program.</label>
-      </div>
-    </div>
-    
-    <p>Name and hometown as it will appear in the commencement program:</p>
-    
-    <div class="form-block-center">
-    <div class="control-group">
-      <label class="control-label" for="input01">Hometown:<span>*</span></label>
-      <div class="controls">
-        <input type="text" class="input-xlarge" id="input01" placeholder="Your hometown">
-      </div>
-    </div>
-    
-    <div class="control-group">
-      <label class="control-label" for="input01">Country:<span>*</span></label>
-      <div class="controls">
-        <select>
-          <option selected="selected">Country</option>
-          <option>USA</option>
-          <option>UK</option>
-        </select>
-      </div>
-    </div>
-    
-    <div class="control-group">
-      <label class="control-label" for="input01">State:<span>*</span></label>
-      <div class="controls">
-        <select>
-          <option selected="selected">State</option>
-          <option>WI</option>
-          <option>MN</option>
-        </select>
-      </div>
-    </div>
-    
-    <div class="control-group">
-      <label class="control-label" for="input01"><i class="icon-info-sign"></i> <em>Preview:</em></label>
-      <div class="controls">
-        <p>Firstname M. Lastname<br />
-          Hometown AA</p>
-      </div>
-    </div>
-</div>
-  
-  </div>
-  
-  <hr />
-  
-  <div class="pagination" style="">
-    <ul>
-      <li><a href="#"><i class="prev-arrow"></i>Prev</a></li>
-      <li class="active">
-        <a href="#">1</a>
-      </li>
-      <li><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#">4</a></li>
-      <li><a href="#">Next<i class="next-arrow"></i></a></li>
-    </ul>
-  </div>
-  
-  <input type="submit" value="Submit" class="btn btn-small pull-right">
-  
   
   

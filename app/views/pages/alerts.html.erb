@@ -10,8 +10,19 @@
 </div>
 <div class="alert">
   <a class="close" data-dismiss="alert">×</a>
-  <strong>Warning!</strong> This is an alert block. Clicking the 'X' deletes this div. Clicking 'Show Alert' and 'Hide Alert' changes the display attribute of the div.
+  <strong>Warning!</strong> This is an alert block. Clicking the 'X' deletes this div.<br />
+  Yellow background: #fef7a6<br />
+  Warm Red text: #f26432
 </div>
+
+<pre class="prettyprint code">
+  &lt;div class="alert"&gt;
+    &lt;a class="close" data-dismiss="alert"&gt;×&lt;/a&gt;
+    &lt;strong&gt;Warning!&lt;/strong&gt; This is an alert block. Clicking the 'X' deletes this div.&lt;br /&gt;
+    Yellow background: #fef7a6&lt;br /&gt;
+    Warm Red text: #f26432
+  &lt;/div&gt;
+</pre>
 
 <h3>Error or Danger Alert</h3>
 <div class="show-hide-links">
@@ -20,8 +31,19 @@
 </div>
 <div class="alert alert-error">
   <a class="close" data-dismiss="alert">×</a>
-  <strong>Error or Danger!</strong> This is an alert block. Clicking the 'X' deletes this div. Clicking 'Show Alert' and 'Hide Alert' changes the display attribute of the div.
+  <strong>Error or Danger!</strong> This is an error or danger alert block. Clicking the 'X' deletes this div.<br />
+  Warm Red background: #f26432<br />
+  White text: #ffffff
 </div>
+
+<pre class="prettyprint code">
+  &lt;div class="alert alert-error"&gt;
+    &lt;a class="close" data-dismiss="alert"&gt;×&lt;/a&gt;
+    &lt;strong&gt;Error or Danger!&lt;/strong&gt; This is an error or danger alert block. Clicking the 'X' deletes this div.&lt;br /&gt;
+    Warm Red background: #f26432&lt;br /&gt;
+    White text: #ffffff
+  &lt;/div&gt;
+</pre>
 
 <h3>Success</h3>
 <div class="show-hide-links">
@@ -30,10 +52,19 @@
 </div>
 <div class="alert alert-success">
   <a class="close" data-dismiss="alert">×</a>
-  <strong>Success</strong> This is a success message block. Clicking the 'X' deletes this div. Clicking 'Show Alert' and 'Hide Alert' changes the display attribute of the div.
+  <strong>Success</strong> This is a success message block. Clicking the 'X' deletes this div. <br />
+  Light Green background: #e2f3bf<br />
+  White text: #83c005
 </div>
 
-
+<pre class="prettyprint code">
+  &lt;div class="alert alert-success"&gt;
+    &lt;a class="close" data-dismiss="alert"&gt;×&lt;/a&gt;
+    &lt;strong&gt;Success&lt;/strong&gt; This is a success message block. Clicking the 'X' deletes this div. &lt;br /&gt;
+    Light Green background: #e2f3bf&lt;br /&gt;
+    White text: #83c005
+  &lt;/div&gt;
+</pre>
 
 
 
@@ -79,24 +110,45 @@
 <hr />
 
 <h3>Tooltips</h3>
-<p>This is an example of <a href="#" id= "example" rel="tooltip" title="Check this out">tooltips</a>.</p>
+<p>This is an example of <a href="#" id= "example" rel="tooltip" title="This is a tooltip">tooltips</a>.</p>
 
 <script>
   (function(){
     $('#example').tooltip('hide')
-    
   })();
 </script>
+
+<pre class="prettyprint code">
+  &lt;h3&gt;Tooltips&lt;/h3&gt;
+   &lt;p&gt;This is an example of &lt;a href="#" id= "example" rel="tooltip" title="This is a tooltip"&gt;tooltips&lt;/a&gt;.&lt;/p&gt;
+
+   &lt;script&gt;
+     (function(){
+       $('#example').tooltip('hide')
+     })();
+   &lt;/script&gt;
+</pre>
 
 <hr />
 
 <h3>Popovers</h3>
-<a href="#" id="popoverex" class="btn" rel="popover" data-content="This is an example of a popover" data-original-title="A Popover">Hover over this button</a>
+<p><a href="#" id="popoverex" class="btn" rel="popover" data-content="This is an example of a popover" data-original-title="A Popover">Hover over this button</a></p>
 
 <script>
   (function() {
     $('#popoverex').popover('hide');
   })();
 </script>
+
+<pre class="prettyprint code">
+  &lt;h3&gt;Popovers&lt;/h3&gt;
+   &lt;p&gt;&lt;a href="#" id="popoverex" class="btn" rel="popover" data-content="This is an example of a popover" data-original-title="A Popover"&gt;Hover over this button&lt;/a&gt;&lt;/p&gt;
+
+   &lt;script&gt;
+     (function() {
+       $('#popoverex').popover('hide');
+     })();
+   &lt;/script&gt;
+</pre>
 
 
