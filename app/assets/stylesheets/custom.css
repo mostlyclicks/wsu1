@@ -58,7 +58,7 @@ caption {text-align:left;}
 #navigation .nav-tabs > .active > a, .nav-tabs > .active > a:hover {background-color:#00aef0;}
 
 #sub-navigation {display:block;width:100%;height:30px;background-color:#00aef0;margin-top:-19px;padding:0;}
-#sub-navigation ul {display:block;padding:0px;margin:0 auto 1em 0px;line-height:30px;border:1px solid red;}
+#sub-navigation ul {display:block;padding:0px;margin:5px auto 1em 0px;line-height:30px;border:1px solid red;}
 #sub-navigation ul li { display:inline;padding:0;margin:0;}
 #sub-navigation ul li a { padding:3px 1em 3px 1em;margin-right:-4px;border-right:1px solid #ffffff;color:#ffffff;}
 #sub-navigation ul li a:hover {color:#4814a0;}
