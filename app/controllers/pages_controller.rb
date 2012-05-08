@@ -11,6 +11,14 @@ class PagesController < ApplicationController
     @header_title = 'No Tab Nav Layout'
     render :layout => 'no_tab_layout'
   end
+  
+  def style_guide
+    @header_title = 'WSU Development Style Guide'
+  end
+  
+  def template_parts
+    @header_title = 'Template Parts'
+  end
 
   def basic
     @header_title = 'Basic'
@@ -40,5 +48,9 @@ class PagesController < ApplicationController
   def override
     @header_title = 'Override'
     render :layout => 'override'
+  end
+  
+  def sample
+    @header_title = 'Sample Page'
   end
 end

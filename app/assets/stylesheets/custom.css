@@ -92,7 +92,7 @@ label span {color:#f26432;}
 .pagination {text-align:center;}
 
 /*Alerts */
-.alert {font-size:20px;line-height:1.25em;}
+.alert {font-size:14px;line-height:1.25em;}
 .alert {background-color:#fef7a6;color:#f26432;}
 .alert-error, .alert-danger {background-color:#f26432;color: #ffffff;}
 .alert-success {background-color:#e2f3bf;color:#83c005;

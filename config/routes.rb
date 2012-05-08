@@ -8,6 +8,9 @@ Wsu1::Application.routes.draw do
   match '/no_tab'   => 'pages#no_tab'
   match '/layouts'  => 'pages#grid_layouts'
   match '/override' => 'pages#override'
+  match '/sample'   => 'pages#sample'
+  match '/style_guide' => 'pages#style_guide'
+  match '/template_parts' => 'pages#template_parts'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
