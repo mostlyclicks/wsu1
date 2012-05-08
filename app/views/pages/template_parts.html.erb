@@ -1,0 +1,98 @@
+<h2><%= @header_title %></h2>
+<h3>Containers</h3>
+<div class="row">
+  <div class="span4"><%= image_tag 'container_no_float.gif' %></div>
+  <div class="span8">
+    <h4>Container with no float</h4>
+    <pre class="prettyprint code">
+      &lt;div class="container">
+
+        &lt;!-- content in here will remain centered with a consistent width -->
+
+      &lt;/div>
+      
+    </pre>
+  </div>
+</div>
+
+<div class="row">
+  <div class="span4"><%= image_tag 'container_float.gif' %></div>
+  <div class="span8">
+    <h4>Container with float and padding</h4>
+    <pre class="prettyprint code">
+      
+      &lt;div class="container-float fl-cont-padding"&gt;
+
+           
+        &lt;!-- content in here will expand with the width 
+                of the browser with padding -->
+           
+      &lt;/div&gt;
+      
+    </pre>
+  </div>
+</div>
+
+<hr />
+
+<h3>Header with tab nav and sub-navigation</h3>
+<%= image_tag 'header.gif', :style => 'border:1px solid #cdcdcd;'%>
+<br /><br />
+<pre class="prettyprint code">
+    &lt;div class="container"&gt;
+      &lt;div id="header"&gt;
+        &lt;img alt="Winona State University" id="logo" src="/assets/logo2.png" /&gt;
+        &lt;div class="pull-right" id="welcome"&gt;
+        &lt;h5&gt;Welcome, Namehere | Logout&lt;/h5&gt;
+        &lt;h5&gt;&lt;span&gt;Technical Support: 507-555-5555&lt;/span&gt;&lt;/h5&gt;
+        &lt;h1&gt;Index: Main Application Layout&lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div id="navigation"&gt;
+      &lt;ul class="nav nav-tabs"&gt;
+        &lt;li class="active"&gt;&lt;a href="/"&gt;Index&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="tablink"&gt;Tab Link&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="tablink"&gt;Tab Link&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="tablink"&gt;Tab Link&lt;/a&gt;&lt;/li&gt;
+
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;!-- header container --&gt;
+
+  &lt;div id="sub-navigation"&gt;
+    &lt;div class="container"&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Subnav here&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="active"&gt;&lt;a href="#"&gt;Subnav here&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="subnavlink"&gt;Subnav here&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="subnavlink"&gt;Subnav here&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="subnavlink"&gt;Subnav here&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;!-- sub-navigation --&gt;
+  
+  &lt;body&gt;
+  
+  ....
+  
+</pre>
+
+<hr />
+
+<h3>Footer</h3>
+<%= image_tag 'footer.gif', :style => 'border:1px solid #cdcdcd;' %>
+<br /><br />
+<pre class="prettyprint code">
+  &lt;div id="footer"&gt;
+    &lt;div class="pull-left"&gt;
+      &lt;img alt="W_logo" src="/assets/w_logo.gif" style="display:block;float:left;" /&gt;
+         &lt;h4&gt;Technical Support: 507-555-5555&lt;/h4&gt;
+         &lt;p&gt;Application development by Winona State University&lt;br /&gt;
+           Winona State University | P.O. Box 5838 | 175 West Mark Street | Winona, MN 55987&lt;br /&gt;
+           507.457.5000 | 1.800.342.5978 | TTY: 877.627.3848 | &lt;a href="/privacy"&gt;Privacy&lt;/a&gt; | &lt;a href="mailto:webmaster@winona.edu"&gt;webmaster@winona.edu&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;img alt="Wsudev_badge" class="pull-right" src="/assets/WSUDev_badge.png" style="margin-right:-43px; " /&gt;
+  &lt;/div&gt;
+
+</pre>
