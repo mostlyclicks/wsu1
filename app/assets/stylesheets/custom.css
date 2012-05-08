@@ -85,7 +85,7 @@ label span {color:#f26432;}
 .required {font-style:italic;}
 .required span {color:#f26432;}
 
-.icon-info-sign, .icon-pencil {background-image: url("../assets/glyphicons-halflings-tr-gr.png");}
+.icon-info-sign, .icon-pencil, .icon-arrow-right, .icon-arrow-left {background-image: url("../assets/glyphicons-halflings-tr-gr.png");}
 .next-arrow {display:block;width:15px;height:16px;float:right;margin:8px 0 0 8px;background:url("../assets/right-arrow.png") 0 0;}
 .prev-arrow {display:block;width:15px;height:16px;float:left;margin:8px 8px 0 0px;background:url("../assets/left-arrow.png") 0 0;}
 
