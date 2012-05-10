@@ -65,7 +65,7 @@ caption {text-align:left;}
 #sub-navigation li:last-child a {border-right:none;}
 /*#sub-navigation li.active a {color:#4814a0;}*/
 
-.content {display:block;width:100%;min-height:500px;background-color:#ffffff;margin-top:-0px;}
+/*.content {display:block;width:100%;min-height:500px;background-color:#ffffff;margin-top:-0px;}*/
 /*.content .container {padding:30px 50px;width:880px;}*/
 .content .container {padding:30px 50px;width:940px;}
 
