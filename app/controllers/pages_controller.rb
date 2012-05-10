@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   
   
   def index
-    @header_title = 'Index: Main Application Layout'
+    @header_title = 'WSU - Application Style Guide'
   end
   
   def no_tab
