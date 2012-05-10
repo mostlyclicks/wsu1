@@ -1,5 +1,5 @@
 <h2><%= @header_title %></h2>
-<p>An example of form elements and their corresponding markup.</p>
+<p>An example of form elements and their corresponding markup</p>
 <hr />
 
 <a name="inline"></a>
@@ -48,7 +48,7 @@
 <p>Description text goes here</p>
 <div class="alert alert-error">
   <a class="close" data-dismiss="alert">×</a>
-   You must complete the following information: Address 1, City, State, Zip, Country, Local phone
+   You must complete the following information: Address 1, City, State, ZIP, Country, Local phone
 </div>
  
  <div class="form-block-center">
@@ -139,7 +139,7 @@
    &lt;div class="alert alert-error"&gt;
      &lt;a class="close" data-dismiss="alert"&gt;×&lt;/a&gt;
      &lt;h4 class="alert-heading"&gt;Whoops!&lt;/h4&gt;
-      You must complete the following information: Address 1, City, State, Zip, Country, Local phone
+      You must complete the following information: Address 1, City, State, ZIP, Country, Local phone
    &lt;/div&gt;
 
     &lt;div class="form-block-center"&gt;
@@ -243,25 +243,25 @@
       <tr>
         <td><input type="checkbox" /></td>
         <td><input type="radio" /></td>
-        <td>Description text goes here.</td>
+        <td>Description Text Goes Here</td>
         <td>BT</td>
       </tr>
       <tr>
         <td><input type="checkbox" /></td>
         <td><input type="radio" /></td>
-        <td>Description text goes here.</td>
+        <td>Description Text Goes Here</td>
         <td>BT</td>
       </tr>
       <tr>
         <td><input type="checkbox" /></td>
         <td><input type="radio" /></td>
-        <td>Description text goes here.</td>
+        <td>Description Text Goes Here</td>
         <td>BT</td>
       </tr>
       <tr>
         <td><input type="checkbox" /></td>
         <td><input type="radio" /></td>
-        <td>Description text goes here.</td>
+        <td>DDescription Text Goes Here</td>
         <td>BT</td>
       </tr>
       </tbody>
@@ -324,30 +324,55 @@
   <a name="multiselect"></a>
   <h3>Multi-select</h3>
 <div class="row">
-<div class="span4">
- <select multiple="multiple" id="multiSelect" class="span4">
-  <option>1</option>
-  <option>2</option>
-  <option>3</option>
-  <option>4</option>
-  <option>5</option>
- </select>
+  <div class="span4">
+   <select multiple="multiple" id="multiSelect" class="span4">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+   </select>
+  </div>
+  <div class="span1" style="text-align:center;">
+    <a href="#" class="btn"><i class="icon-arrow-right"></i></a><br /><br />
+    <a href="#" class="btn"><i class="icon-arrow-left"></i></a>
+  </div> 
+  <div class="span4">
+   <select multiple="multiple" id="multiSelect"  class="span4">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+   </select>
+  </div>
 </div>
-<div class="span1" style="text-align:center;">
-  <a href="#" class="btn"><i class="icon-arrow-right"></i></a><br /><br />
-  <a href="#" class="btn"><i class="icon-arrow-left"></i></a>
+
+<pre class="prettyprint code">
+
+&lt;div class="row"&gt;
+  &lt;div class="span4"&gt;
+   &lt;select multiple="multiple" id="multiSelect" class="span4"&gt;
+    &lt;option&gt;1&lt;/option&gt;
+    &lt;option&gt;2&lt;/option&gt;
+    &lt;option&gt;3&lt;/option&gt;
+    &lt;option&gt;4&lt;/option&gt;
+    &lt;option&gt;5&lt;/option&gt;
+   &lt;/select&gt;
+  &lt;/div&gt;
+  &lt;div class="span1" style="text-align:center;"&gt;
+    &lt;a href="#" class="btn"&gt;&lt;i class="icon-arrow-right"&gt;&lt;/i&gt;&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;
+    &lt;a href="#" class="btn"&gt;&lt;i class="icon-arrow-left"&gt;&lt;/i&gt;&lt;/a&gt;
+  &lt;/div&gt; 
+  &lt;div class="span4"&gt;
+   &lt;select multiple="multiple" id="multiSelect"  class="span4"&gt;
+    &lt;option&gt;1&lt;/option&gt;
+    &lt;option&gt;2&lt;/option&gt;
+    &lt;option&gt;3&lt;/option&gt;
+    &lt;option&gt;4&lt;/option&gt;
+    &lt;option&gt;5&lt;/option&gt;
+   &lt;/select&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
   
-</div> 
-<div class="span4">
- <select multiple="multiple" id="multiSelect"  class="span4">
-  <option>1</option>
-  <option>2</option>
-  <option>3</option>
-  <option>4</option>
-  <option>5</option>
- </select>
-</div>
-</div>
- 
-  
-  
+</pre>
