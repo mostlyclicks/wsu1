@@ -67,7 +67,7 @@ caption {text-align:left;}
 
 /*.content {display:block;width:100%;min-height:500px;background-color:#ffffff;margin-top:-0px;}*/
 /*.content .container {padding:30px 50px;width:880px;}*/
-.content .container {padding:30px 50px;width:940px;}
+/*.content */.container {padding:0px 0px;width:940px;}
 
 /* Forms, labels, prompts */
 
