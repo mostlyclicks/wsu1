@@ -70,12 +70,15 @@ caption {text-align:left;}
 .content .container {padding:30px 50px;width:940px;}*
 
 /* Forms, labels, prompts */
+
+
 .form-inline, .form-block {margin:28px 0 28px 0;}
 .form-block-center {width:550px;margin:0 auto;}
 .form-horizontal .control-group, .form-horizontal .control-group-error  {margin-bottom: 10px;*zoom: 1;}
 
 .btn {font-size:12px;}
 .btn-small {padding: 3px 25px;}
+.btn .btn-inverse {background-color:#4814a0;}
 input, button, select, textarea {font-family: Arial, Helvetica, Arial, sans-serif;}
 
 .radio {margin-top:4px;}
