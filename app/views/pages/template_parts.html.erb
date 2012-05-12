@@ -4,33 +4,37 @@
 <a name="containers"></a>
 <h3>Containers</h3>
 <div class="row">
-  <div class="span4"><%= image_tag 'container_no_float.gif' %></div>
+  <div class="span4"><%= image_tag 'container-not-fluid.gif' %></div>
   <div class="span8">
-    <h4>Container with no float</h4>
+    <h4>Fixed container and fluid container wrapper</h4>
     <pre class="prettyprint code">
-      &lt;div class="container">
-
-        &lt;!-- content in here will remain centered with a consistent width -->
-
-      &lt;/div>
+      <span style="color:red;">&lt;div class="container"&gt;</span>
+        &lt;!-- content in here will remain centered with a fixed width --&gt;
+      <span style="color:red;">&lt;/div&gt;</span>
+      
+      <span style="color:green;">&lt;div class="container-fluid white-background vertical-padding"&gt;</span>
+        <span style="color:red;">&lt;div class="container"&gt;</span>
+          &lt;!-- Fluid container (green) wrapping a fixed container (red) --&gt;
+        <span style="color:red;">&lt;/div&gt;</span>
+      <span style="color:green;">&lt;/div&gt;</span>
       
     </pre>
   </div>
 </div>
 
 <div class="row">
-  <div class="span4"><%= image_tag 'container_float.gif' %></div>
+  <div class="span4"><%= image_tag 'container-fluid.gif' %></div>
   <div class="span8">
-    <h4>Container with float and padding</h4>
+    <h4>Container header with fluid body</h4>
     <pre class="prettyprint code">
       
-      &lt;div class="container-float fl-cont-padding"&gt;
-
-           
-        &lt;!-- content in here will expand with the width 
-                of the browser with padding -->
-           
-      &lt;/div&gt;
+      <span style="color:red;">&lt;div class="container"&gt;</span>
+        &lt;!-- content in here will remain centered with a fixed width --&gt;
+      <span style="color:red;">&lt;/div&gt;</span>
+      
+      <span style="color:green;">&lt;div class="container-fluid white-background vertical-padding"&gt;</span>
+          &lt;!-- Fluid container (green) wrapping fluid content - <strong>.row-fluid</strong> --&gt;
+      <span style="color:green;">&lt;/div&gt;</span>
       
     </pre>
   </div>
@@ -93,14 +97,17 @@
 <br /><br />
 <pre class="prettyprint code">
   &lt;div id="footer"&gt;
-    &lt;div class="pull-left"&gt;
-      &lt;img alt="W_logo" src="/assets/w_logo.gif" style="display:block;float:left;" /&gt;
-         &lt;h4&gt;Technical Support: 507-555-5555&lt;/h4&gt;
-         &lt;p&gt;Application development by Winona State University&lt;br /&gt;
-           Winona State University | P.O. Box 5838 | 175 West Mark Street | Winona, MN 55987&lt;br /&gt;
-           507.457.5000 | 1.800.342.5978 | TTY: 877.627.3848 | &lt;a href="/privacy"&gt;Privacy&lt;/a&gt; | &lt;a href="mailto:webmaster@winona.edu"&gt;webmaster@winona.edu&lt;/a&gt;&lt;/p&gt;
+    &lt;div class="span1"&gt;&lt;img alt="W_logo" src="/assets/w_logo.gif" style="display:block;float:left;" /&gt;&lt;/div&gt;
+    &lt;div class="pull-left span3"&gt;
+      &lt;h4&gt;Technical Support: 507-555-5555&lt;/h4&gt;
+      &lt;p&gt;Application development by Winona State University&lt;br /&gt;
+         Winona State University | P.O. Box 5838 | 175 West Mark Street | Winona, MN 55987&lt;br /&gt;
+         507.457.5000 | 1.800.342.5978 | TTY: 877.627.3848 | &lt;a href="/privacy"&gt;Privacy&lt;/a&gt; | &lt;a href="mailto:webmaster@winona.edu"&gt;webmaster@winona.edu&lt;/a&gt;&lt;/p&gt;
     &lt;/div&gt;
-    &lt;img alt="Wsudev_badge" class="pull-right" src="/assets/WSUDev_badge.png" style="margin-right:-43px; " /&gt;
+    &lt;div class="span2"&gt;
+      &lt;img alt="Wsudev_badge" class="pull-right" src="/assets/WSUDev_badge.png" style="margin-right:-43px; " /&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
+  
 
 </pre>
