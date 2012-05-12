@@ -28,8 +28,8 @@ class PagesController < ApplicationController
     @header_title = 'Navigation'
   end
 
-  def tables
-    @header_title = 'Tables'
+  def fluid
+    @header_title = 'Fluid Layouts'
     render :layout => 'float_container'
   end
 

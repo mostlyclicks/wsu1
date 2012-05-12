@@ -1,49 +1,42 @@
-@import "bootstrap";
-@import "bootstrap-responsive"
+/*@import "bootstrap";
+
 
 /* Colors */
-.purple                 {color:#4814a0;}
-.purple-background      {background-color:#4814a0;}
-.warm-red               {color:#f26432;}
-.warm-red-background    {background-color:#f26432;}
-.blue                   {color:#00aef0;}
-.blue-background        {background-color:#00aef0;}
-.light-blue             {color:#e5f7fd;}
-.light-blue-background  {background-color:#e5f7fd;}
-.yellow                 {color:#fef7a6;}
-.yellow-background      {background-color:#fef7a6}
-.orange                 {color:#f78f1e;}
-.orange-background      {background-color:#f78f1e;}
-.white                  {color:#ffffff;}
-.white-background       {background-color:#ffffff;}
-.green                  {color:#8fd400;}
-.green-background       {background-color:#8fd400;}
-.fortygray                 {color:#a7a9ac;}
-.fortygray-background      {background-color:#a7a9ac;}
+.purple                     {color:#4814a0;}
+.purple-background          {background-color:#4814a0;}
+.warm-red                   {color:#f26432;}
+.warm-red-background        {background-color:#f26432;}
+.blue                       {color:#00aef0;}
+.blue-background            {background-color:#00aef0;}
+.light-blue                 {color:#e5f7fd;}
+.light-blue-background      {background-color:#e5f7fd;}
+.yellow                     {color:#fef7a6;}
+.yellow-background          {background-color:#fef7a6}
+.orange                     {color:#f78f1e;}
+.orange-background          {background-color:#f78f1e;}
+.white                      {color:#ffffff;}
+.white-background           {background-color:#ffffff;}
+.green                      {color:#8fd400;}
+.green-background           {background-color:#8fd400;}
+.fortygray                  {color:#a7a9ac;}
+.fortygray-background       {background-color:#a7a9ac;}
 .eightygray                 {color:#58595b;}
 .eightygray-background      {background-color:#58595b;}
 
-
-
-
-
-
+.vertical-padding {padding-top:30px;padding-bottom:30px;}
 .padding10 {padding:10px;}
 .padding20 {padding:20px;}
 .left-15 {margin-left:15px;}
 .right-15 {margin-right:15px;}
-
 .bottom-10 {margin-bottom:10px;}
 
 .center {text-align:center;}
-.row {margin-bottom:20px;margin-top:8px;}
-
+.row, .row-fluid {margin-bottom:20px;margin-top:8px;}
 
 body {background:url('../assets/top_bg2.jpg') 0 0 repeat-x #4814a0;font-family:Arial, Helvetica, Arial, sans-serif;}/*{background:url('../assets/top_bg.jpg') 0 0 repeat-x #4814a0;}*/
 body, p, label {color:#676767;font-family:Arial, Helvetica, Arial, sans-serif;}
 hr {border: 2px solid #f26432;margin:15px 0 15px 0;}
 caption {text-align:left;}
-/*.fl-cont-padding {padding:40px;}*/
 
 #header {display:block;width:100%;height:175px;color:#ffffff;}
 #header img#logo {margin-left:-17px;margin-top:31px;}
@@ -52,7 +45,7 @@ caption {text-align:left;}
 #header div#welcome h5 {font-size:12pt;font-weight:500;margin-top:2px;}
 #header div#welcome span {font-weight:200;}
 
-#navigation {display:block;margin-top:-34px;}
+#navigation {display:block;width:940px;margin-top:-34px;}
 #navigation .nav-tabs {border-bottom: 1px solid transparent;font-size:14px;font-weight:500;}
 #navigation .nav-tabs > li > a {background-color:#f26432;color:#ffffff;margin-right:3px;border-color:transparent;border-bottom:1px solid #00aef0;}
 #navigation .nav-tabs > li > a:hover {background-color:#00aef0;color:#ffffff;border-color:transparent;}
@@ -64,15 +57,11 @@ caption {text-align:left;}
 #sub-navigation ul li a { padding:3px 1em 3px 1em;margin-right:-4px;border-right:1px solid #ffffff;color:#ffffff;}
 #sub-navigation ul li a:hover {color:#4814a0;}
 #sub-navigation li:last-child a {border-right:none;}
-/*#sub-navigation li.active a {color:#4814a0;}*/
 
-/*.content {display:block;width:100%;min-height:500px;background-color:#ffffff;margin-top:-0px;}*/
-/*.content .container {padding:30px 50px;width:880px;}*/
-/*.content */.container {padding:0px 0px;width:940px;}
+.container {padding:0px 0px;}
+.container-fluid {background-color:#ffffff;}
 
 /* Forms, labels, prompts */
-
-
 .form-inline, .form-block {margin:28px 0 28px 0;}
 .form-block-center {width:550px;margin:0 auto;}
 .form-horizontal .control-group, .form-horizontal .control-group-error  {margin-bottom: 10px;*zoom: 1;}
@@ -108,7 +97,7 @@ color: #468847;}
 .table-striped tbody tr:nth-child(odd) td {background-color:#ffffff;}
 thead, tbody th {background-color:#fef7a6;}
 
-.override {display:block;width:100%;height:48px;background-color:#e2e1dd;padding-top:-10px;margin:0px;}
+.override {display:block;height:48px;background-color:#e2e1dd;padding-top:-10px;margin:0px;}
 .top-10 {margin-top:10px;}
 
 #footer {display:block;height:100px;width:960px;margin:0 auto 0 auto;color:#ffffff;}
@@ -117,4 +106,34 @@ thead, tbody th {background-color:#fef7a6;}
 #footer p {color:#ffffff;font-weight:lighter;}
 #footer .pull-left a {color:#ffffff;}
 
+
+@media only screen and (min-width: 480px) {
+  body:after {content:'480px';}
+  .container {width:100%;}
+  #navigation {display:block;width:480px;margin-top:-34px;}
+  #navigation .nav-tabs {border-bottom: 1px solid transparent;font-size:11px;font-weight:500;}
+}
+
+@media only screen and (min-width: 767px) {
+ body:after {content:'767px';}
+ .container {width:100%;}
+ #header {display:block;width:767px;height:175px;color:#ffffff;}
+ #navigation {display:block;width:768px;margin-top:-34px;}
+ #navigation .nav-tabs {border-bottom: 1px solid transparent;font-size:12px;font-weight:500;}
+ #footer {display:block;height:100px;width:767px;margin:0 auto 0 auto;color:#ffffff;}
+ #footer .pull-left {width:450px;}
+}
+
+@media only screen and (min-width: 940px) {
+ body:after {content:'940px';}
+ .container {width:940px;}
+ #header {display:block;width:100%;height:175px;color:#ffffff;}
+ #navigation {display:block;width:940px;margin-top:-34px;}
+ #navigation .nav-tabs {border-bottom: 1px solid transparent;font-size:14px;font-weight:500;}
+ #navigation .nav-tabs > li > a {background-color:#f26432;color:#ffffff;margin-right:3px;border-color:transparent;border-bottom:1px solid #00aef0;}
+ #navigation .nav-tabs > li > a:hover {background-color:#00aef0;color:#ffffff;border-color:transparent;}
+ #navigation .nav-tabs > .active > a, .nav-tabs > .active > a:hover {background-color:#00aef0;}
+ #footer {display:block;height:100px;width:940px;margin:0 auto 0 auto;color:#ffffff;}
+ #footer .pull-left {width:650px;}
+}
 

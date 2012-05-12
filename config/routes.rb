@@ -2,7 +2,7 @@ Wsu1::Application.routes.draw do
   
   match '/basic'    => 'pages#basic'
   match '/nav'      => 'pages#nav'
-  match '/tables'   => 'pages#tables'
+  match '/fluid'   => 'pages#fluid'
   match '/forms'    => 'pages#forms'
   match '/alerts'   => 'pages#alerts'
   match '/no_tab'   => 'pages#no_tab'
