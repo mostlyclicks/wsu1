@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Winona State University</title>
-   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
   <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
     <![endif]-->
@@ -12,18 +12,22 @@
 </head>
 <body>
   <div class="container">
+    <button class="btn btn-collapse pull-right" id="collapse-btn" data-toggle="collapse" data-target="#super-header">Collapse <i class=" icon-minus-sign"></i></button>
+  </div>  
+
+<div id="super-header" class="collapse in" style="padding:0;margin:0;">
+  <div class="container">
     <div id="header">
       <%= link_to (image_tag 'logo2.png', id: 'logo', alt: 'Winona State University'), '/' %>
       <div class="pull-right" id="welcome">
-      <h5>Welcome, Namehere | Logout</h5>
-      <h5><span>Technical Support: 507-555-5555</span></h5>
-      <h1><%= @header_title %></h1>
+        <h5>Welcome, Namehere | Logout</h5>
+        <h5><span>Technical Support: 507-555-5555</span></h5>
+        <h1><%= @header_title %></h1>
       </div>
     </div>
-  
     <%= render 'pages/nav' %>
   </div><!-- header container -->
-  
+
   <div id="sub-navigation">
     <div class="container">
       <ul>
@@ -35,6 +39,31 @@
       </ul>
     </div>
   </div><!-- sub-navigation -->
+</div><!-- super-header -->
+
+<script>
+  $('#super-header').collapse({
+    toggle: false
+    
+  });
+  
+  $('#super-header').on('hidden', function () {
+    $('#collapse-btn').replaceWith('<button class="btn btn-collapse pull-right" id="collapse-btn" data-toggle="collapse" data-target="#super-header">Expand <i class=" icon-plus-sign"></i></button>')
+    console.log('Expanded')
+  })
+  
+  $('#super-header').on('show', function () {
+    $('#collapse-btn').replaceWith('<button class="btn btn-collapse pull-right" id="collapse-btn" data-toggle="collapse" data-target="#super-header">Collapse <i class=" icon-minus-sign"></i></button>')
+    console.log('Collapesed')
+  })
+  
+ 
+  
+
+  
+
+  
+</script>
 
   <div class="container-fluid white-background vertical-padding">
     <div class="container ">

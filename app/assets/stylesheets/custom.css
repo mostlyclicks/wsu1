@@ -32,20 +32,55 @@
 .center {text-align:center;}
 .row, .row-fluid {margin-bottom:20px;margin-top:8px;}
 
-body {background:url('../assets/top_bg2.jpg') 0 0 repeat-x #4814a0;font-family:Arial, Helvetica, Arial, sans-serif;}/*{background:url('../assets/top_bg.jpg') 0 0 repeat-x #4814a0;}*/
+body {background:url('../assets/top_bg2.jpg') 0 0 repeat-x #4814a0;font-family:Arial, Helvetica, Arial, sans-serif;}
 body, p, label {color:#676767;font-family:Arial, Helvetica, Arial, sans-serif;}
 hr {border: 2px solid #f26432;margin:15px 0 15px 0;}
 caption {text-align:left;}
 
+#super-header {height:175px;}
+#collapse-btn {background-color:#f78f1e;
+border-bottom-color: #f78f1e;
+-webkit-border-radius: 0 0 4px 4px;
+-moz-border-radius:  0 0 4px 4px;
+border-radius:  0 0 4px 4px;"}
+
+.btn-collapse {
+  color:#ffffff;
+  text-shadow:none;
+  background-color: #f78f1e;
+  background-image: -moz-linear-gradient(top, #f78f1e, #f78f1e);
+  background-image: -ms-linear-gradient(top, #f78f1e, #f78f1e);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f78f1e), to(#f78f1e));
+  background-image: -webkit-linear-gradient(top, #f78f1e, #f78f1e);
+  background-image: -o-linear-gradient(top, #f78f1e, #f78f1e);
+  background-image: linear-gradient(top, #f78f1e, #f78f1e);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f78f1e', endColorstr='#f78f1e', GradientType=0);
+  border-color: #d67c1b #d67c1b #d67c1b;
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+.btn-collapse:hover,
+.btn-collapse:active,
+.btn-collapse.active,
+.btn-collapse.disabled,
+.btn-collapse[disabled] {
+  background-color: #f78f1e;
+}
+.btn-collapse:active,
+.btn-collapse.active {
+  background-color: #f78f1e \9;
+}
+
 #header {display:block;width:100%;height:175px;color:#ffffff;}
-#header img#logo {margin-left:-17px;margin-top:31px;}
-#header div#welcome {text-align:right;margin-top:37px;color:#ffffff;}
+#header img#logo {margin-left:-17px;margin-top:0px;}
+#header div#welcome {text-align:right;margin-top:8px;color:#ffffff;}
 #header div#welcome h1 {font-size:32px;font-weight:400;margin-top:2px;}
 #header div#welcome h5 {font-size:12pt;font-weight:500;margin-top:2px;}
 #header div#welcome span {font-weight:200;}
 
-#navigation {display:block;width:940px;margin-top:-34px;}
-#navigation .nav-tabs {border-bottom: 1px solid transparent;font-size:14px;font-weight:500;}
+#navigation {display:block;width:940px;}
+#navigation .nav-tabs {border-bottom: 1px solid transparent;font-size:14px;font-weight:500;margin-top:-64px;}
 #navigation .nav-tabs > li > a {background-color:#f26432;color:#ffffff;margin-right:3px;border-color:transparent;border-bottom:1px solid #00aef0;}
 #navigation .nav-tabs > li > a:hover {background-color:#00aef0;color:#ffffff;border-color:transparent;}
 #navigation .nav-tabs > .active > a, .nav-tabs > .active > a:hover {background-color:#00aef0;}
@@ -78,6 +113,7 @@ label span {color:#f26432;}
 .required span {color:#f26432;}
 
 .icon-info-sign, .icon-pencil, .icon-arrow-right, .icon-arrow-left {background-image: url("../assets/glyphicons-halflings-tr-gr.png");}
+.icon-minus-sign, .icon-plus-sign {background-image: url("../assets/glyphicons-halflings-white.png");}
 .next-arrow {display:block;width:15px;height:16px;float:right;margin:8px 0 0 8px;background:url("../assets/right-arrow.png") 0 0;}
 .prev-arrow {display:block;width:15px;height:16px;float:left;margin:8px 8px 0 0px;background:url("../assets/left-arrow.png") 0 0;}
 
