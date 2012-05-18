@@ -457,7 +457,9 @@
 
       this.$element[dimension](0)
       this.transition('addClass', 'show', 'shown')
-      this.$element[dimension](this.$element[0][scroll])
+      //this.$element[dimension](this.$element[0][scroll]) 
+      //https://github.com/twitter/bootstrap/issues/2131
+      $.support.transition && this.$element[dimension](this.$element[0][scroll])
 
     }
 
