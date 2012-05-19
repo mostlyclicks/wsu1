@@ -1,46 +1,7 @@
 <h2><%= @header_title %></h2>
 <hr />
 
-<a name="containers"></a>
-<h3>Containers</h3>
-<div class="row">
-  <div class="span4"><%= image_tag 'container-not-fluid.gif' %></div>
-  <div class="span8">
-    <h4>Fixed container and fluid container wrapper</h4>
-    <pre class="prettyprint code">
-      <span style="color:red;">&lt;div class="container"&gt;</span>
-        &lt;!-- content in here will remain centered with a fixed width --&gt;
-      <span style="color:red;">&lt;/div&gt;</span>
-      
-      <span style="color:green;">&lt;div class="container-fluid white-background vertical-padding"&gt;</span>
-        <span style="color:red;">&lt;div class="container"&gt;</span>
-          &lt;!-- Fluid container (green) wrapping a fixed container (red) --&gt;
-        <span style="color:red;">&lt;/div&gt;</span>
-      <span style="color:green;">&lt;/div&gt;</span>
-      
-    </pre>
-  </div>
-</div>
 
-<div class="row">
-  <div class="span4"><%= image_tag 'container-fluid.gif' %></div>
-  <div class="span8">
-    <h4>Container header with fluid body</h4>
-    <pre class="prettyprint code">
-      
-      <span style="color:red;">&lt;div class="container"&gt;</span>
-        &lt;!-- content in here will remain centered with a fixed width --&gt;
-      <span style="color:red;">&lt;/div&gt;</span>
-      
-      <span style="color:green;">&lt;div class="container-fluid white-background vertical-padding"&gt;</span>
-          &lt;!-- Fluid container (green) wrapping fluid content - <strong>.row-fluid</strong> --&gt;
-      <span style="color:green;">&lt;/div&gt;</span>
-      
-    </pre>
-  </div>
-</div>
-
-<hr />
 
 <a name="navigation"></a>
 <h3>Header with tab nav and sub-navigation</h3>
@@ -88,6 +49,120 @@
   ....
   
 </pre>
+
+<hr />
+<a name="collapse"></a>
+<h3>Header with collapse</h3>
+<%= image_tag 'collapse_screenshot.gif', :style => 'border:1px solid #cdcdcd;'%>
+<br /><br />
+
+<pre class="prettyprint code">
+  
+  &lt;body&gt;
+    <span style="color:green;">&lt;div class="container"&gt;
+      &lt;div id="collapse-welcome" class="pull-left"&gt;&lt;h5&gt;Welcome, Namehere | Logout&lt;/h5&gt;&lt;/div&gt;
+      &lt;button class="btn btn-collapse pull-right" id="collapse-btn" data-toggle="collapse" data-target="#super-header"&gt;Collapse &lt;i class=" icon-minus-sign"&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;/div&gt;</span>
+
+  <span style="color:green;">&lt;div id="super-header" class="collapse in"&gt;</span>
+    &lt;div class="container"&gt;
+      &lt;div id="header"&gt;
+        ...
+      &lt;/div&gt;
+
+      &lt;div id="navigation"&gt;
+        &lt;ul class="nav nav-tabs"&gt;
+          ...
+        &lt;/ul&gt;
+      &lt;/div&gt;&lt;!-- navigation --&gt;
+      
+    &lt;/div&gt;&lt;!-- header container --&gt;
+
+    &lt;div id="sub-navigation"&gt;
+      &lt;div class="container"&gt;
+        &lt;ul&gt;
+          ...
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- sub-navigation --&gt;
+<span style="color:green;">&lt;/div&gt;&lt;!-- super-header --&gt;</span>
+
+<span style="color:blue;">
+&lt;script&gt;
+  $('#super-header').collapse({
+    toggle: false
+
+  });
+
+  $('div#collapse-welcome').hide();
+
+  $('#super-header').on('hidden', function () {
+    console.log('Expanded')
+    $('#collapse-btn').replaceWith('&lt;button class="btn btn-collapse pull-right" id="collapse-btn" data-toggle="collapse" data-target="#super-header"&gt;Expand &lt;i class=" icon-plus-sign"&gt;&lt;/i&gt;&lt;/button&gt;')
+    $('div#collapse-welcome').show();
+
+  });
+
+  $('#super-header').on('show', function () {
+    $('#collapse-btn').replaceWith('&lt;button class="btn btn-collapse pull-right" id="collapse-btn" data-toggle="collapse" data-target="#super-header"&gt;Collapse &lt;i class=" icon-minus-sign"&gt;&lt;/i&gt;&lt;/button&gt;')
+    $('div#collapse-welcome').hide();
+    console.log('Collapsed')
+  });
+
+&lt;/script&gt;</span>
+  
+</pre>
+
+<hr />
+
+<a name="override"></a>
+<h3>Override <%= link_to 'See example', override_path, target: 'new', class: 'pull-right' %></h3>
+<%= image_tag 'override_screenshot.gif', :style => 'border:1px solid #cdcdcd;' %>
+<br /><br />
+
+<pre class="prettyprint code">
+  
+  &lt;body&gt;
+    &lt;!-- Override Bar Example--&gt; 
+    &lt;div class="container-fluid override"&gt;
+      &lt;div class="container"&gt;
+       &lt;div class="control-group"&gt;
+        &lt;form class="form-inline top-10" &gt;
+          &lt;label class="right-15"&gt;Override as:&lt;span&gt;*&lt;/span&gt;&lt;/label&gt;
+          &lt;input type="text" /&gt;
+          &lt;i class="icon-info-sign left-15"&gt;&lt;/i&gt;
+          &lt;input type="submit" value="Update" class="btn btn-small left-15"&gt; 
+        &lt;/form&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- Override Bar Example END --&gt;
+  
+</pre>
+
+
+<hr />
+
+<a name="no_tab"></a>
+<h3>No navigation tabs <%= link_to 'See example', no_tab_path, target: 'new', class: 'pull-right' %></h3>
+<%= image_tag 'no_tab_screenshot.gif', :style => 'border:1px solid #cdcdcd;' %>
+<br /><br />
+
+<pre class="prettyprint code">
+  
+  &lt;body&gt;
+    &lt;div class="container"&gt;
+      <span style="color:green;">&lt;div id="header_no_tab"&gt;</span>
+        &lt;img alt="Winona State University" id="logo" src="/assets/logo2.png" /&gt;
+        &lt;div class="pull-right" id="welcome"&gt;
+        &lt;h5&gt;Welcome, Namehere | Logout&lt;/h5&gt;
+        &lt;h5&gt;&lt;span&gt;Technical Support: 507-555-5555&lt;/span&gt;&lt;/h5&gt;
+        &lt;h1&gt;Index: Main Application Layout&lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  
+</pre>
+
 
 <hr />
 

@@ -5,7 +5,48 @@
 <h2>Layouts</h2>
 <hr/>
 
-<h3>Left Sidebar</h3>
+<a name="containers"></a>
+<h3>Containers</h3>
+<div class="row">
+  <div class="span4"><%= image_tag 'container-not-fluid.gif' %></div>
+  <div class="span8">
+    <h4>Fixed container and fluid container wrapper</h4>
+    <pre class="prettyprint code">
+      <span style="color:red;">&lt;div class="container"&gt;</span>
+        &lt;!-- content in here will remain centered with a fixed width --&gt;
+      <span style="color:red;">&lt;/div&gt;</span>
+      
+      <span style="color:green;">&lt;div class="container-fluid white-background vertical-padding"&gt;</span>
+        <span style="color:red;">&lt;div class="container"&gt;</span>
+          &lt;!-- Fluid container (green) wrapping a fixed container (red) --&gt;
+        <span style="color:red;">&lt;/div&gt;</span>
+      <span style="color:green;">&lt;/div&gt;</span>
+      
+    </pre>
+  </div>
+</div>
+
+<div class="row">
+  <div class="span4"><%= image_tag 'container-fluid.gif' %></div>
+  <div class="span8">
+    <h4>Container header with fluid body <%= link_to 'See example', fluid_path, target: 'new', class: 'pull-right' %></h4>
+    <pre class="prettyprint code">
+      
+      <span style="color:red;">&lt;div class="container"&gt;</span>
+        &lt;!-- content in here will remain centered with a fixed width --&gt;
+      <span style="color:red;">&lt;/div&gt;</span>
+      
+      <span style="color:green;">&lt;div class="container-fluid white-background vertical-padding"&gt;</span>
+          &lt;!-- Fluid container (green) wrapping fluid content - <strong>.row-fluid</strong> --&gt;
+      <span style="color:green;">&lt;/div&gt;</span>
+      
+    </pre>
+  </div>
+</div>
+
+<hr />
+
+<h3>Left Sidebar <%= link_to 'See fluid version', fluid_path, target: 'new', class: 'pull-right' %></h3>
   <div class="row">
     <div class="span3 fortygray-background">.span3</div>
     <div class="span9 fortygray-background">.span9</div>
@@ -29,7 +70,7 @@
   </pre>
   
   <hr/>
-<h3>Two/Three Columns</h3>
+<h3>Two/Three Columns <%= link_to 'See fluid version', fluid_path, target: 'new', class: 'pull-right' %></h3>
   <div class="row">
      <div class="span6 fortygray-background">.span6</div>
      <div class="span6 fortygray-background">.span6</div>
@@ -57,7 +98,7 @@
 
 <hr />
   
-<h3>Right Sidebar</h3>
+<h3>Right Sidebar <%= link_to 'See fluid version', fluid_path, target: 'new', class: 'pull-right' %></h3>
   <div class="row">
      <div class="span8 fortygray-background">.span8</div>
      <div class="span4 fortygray-background">.span4</div>

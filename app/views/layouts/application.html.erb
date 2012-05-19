@@ -12,6 +12,7 @@
 </head>
 <body>
   <div class="container">
+    <div id="collapse-welcome" class="pull-left"><h5>Welcome, Namehere | Logout</h5></div>
     <button class="btn btn-collapse pull-right" id="collapse-btn" data-toggle="collapse" data-target="#super-header">Collapse <i class=" icon-minus-sign"></i></button>
   </div>
 
@@ -46,17 +47,21 @@
 <script>
 $('#super-header').collapse({
   toggle: false
-
+  
 });
+
+$('div#collapse-welcome').hide();
 
 $('#super-header').on('hidden', function () {
   console.log('Expanded')
   $('#collapse-btn').replaceWith('<button class="btn btn-collapse pull-right" id="collapse-btn" data-toggle="collapse" data-target="#super-header">Expand <i class=" icon-plus-sign"></i></button>')
+  $('div#collapse-welcome').show();
   
 });
 
 $('#super-header').on('show', function () {
   $('#collapse-btn').replaceWith('<button class="btn btn-collapse pull-right" id="collapse-btn" data-toggle="collapse" data-target="#super-header">Collapse <i class=" icon-minus-sign"></i></button>')
+  $('div#collapse-welcome').hide();
   console.log('Collapsed')
 });
  
