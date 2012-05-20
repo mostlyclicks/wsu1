@@ -161,14 +161,14 @@ thead, tbody th {background-color:#fef7a6;}
 
 
 @media only screen and (min-width: 480px) {
-  body:after {content:'480px';}
+  /*body:after {content:'480px';}*/
   .container {width:100%;}
   #navigation {display:block;width:480px;margin-top:-34px;}
   #navigation .nav-tabs {border-bottom: 1px solid transparent;font-size:11px;font-weight:500;}
 }
 
 @media only screen and (min-width: 767px) {
- body:after {content:'767px';}
+ /*body:after {content:'767px';}*/
  .container {width:100%;}
  #header {display:block;width:767px;height:175px;color:#ffffff;}
  #navigation {display:block;width:768px;margin-top:-34px;}
@@ -178,7 +178,7 @@ thead, tbody th {background-color:#fef7a6;}
 }
 
 @media only screen and (min-width: 940px) {
- body:after {content:'940px';}
+ /*body:after {content:'940px';}*/
  .container {width:940px;}
  #header {display:block;width:100%;height:175px;color:#ffffff;}
  #navigation {display:block;width:940px;margin-top:-34px;}
